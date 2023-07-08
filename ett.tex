@@ -8,7 +8,7 @@
 \usepackage[]{hyperref}
 \hypersetup{colorlinks, linkcolor=blue}
 \usepackage[]{bigstrut}
-\usepackage[svgnames]{xcolor}
+\usepackage[dvipsnames,svgnames]{xcolor}
 \usepackage[]{multicol}
 % \usepackage{chemfig}
 \usepackage{mhchem}
@@ -35,6 +35,23 @@ arc is angular,breakable,parbox=false,before upper=\par,before lower=\par,drop s
 
 \newtcolorbox[auto counter,number within=section]{note}[2][]{%
 breakable,parbox=false,before upper=\par,before lower=\par,drop shadow,skin={spartan,bicolor},colbacklower=white,colback=red!3!white,colframe=brown!46!black,fonttitle=\bfseries, title={\heiti Note}~\thetcbcounter: #2,#1}
+
+\newtcolorbox[auto counter,number within=section]{task}[2][]{%
+colback=Emerald!10,colframe=cyan!40!black,fonttitle=\bfseries,title={\heiti Task}~\thetcbcounter: #2,#1}
+
+  
+\usepackage[]{adforn}
+% \renewcommand{\chaptername}{第 \thechapter{} 章}
+% \newcommand{\exercisename}{Exercice}
+\newenvironment{problemset}[1][\chaptername~\;Exercice]{
+  \begin{center}
+    \phantomsection\addcontentsline{toc}{section}{\texorpdfstring{chapter\;Exercice}{Exercice}}
+    % \markboth{#1}{\rightmark}
+    \markright{#1}
+    \textcolor{black}{\Large\bfseries\adftripleflourishleft~#1~\adftripleflourishright}
+  \end{center}
+  \begin{enumerate}}{
+  \end{enumerate}}
 
 
 \begin{document}
@@ -251,6 +268,50 @@ Journals mandate which style should be used, so check the author guidelines if y
 
   \end{longtblr}
   }
+
+  \begin{task}[label={myautocounter}]{\heiti Corpus-based task}
+    Can you build your own corpus with at least 100, 000 tokens?
+  \end{task}
+
+  \begin{note}[label={myautocounter}]{\heiti Corpus used for this book}
+    In this book, "corpus-based tasks" are designed to enhance your ability to explore language realizations of medical RA abstracts with corpus approach. Most of these tasks might require the use of software such as AntConc, WordSmith, and so on.
+  \end{note}
+
+  \section{Glossary}
+
+  {\small
+  \begin{longtblr}[
+      caption = {Glossary of Chapter 1},
+      label = {tab:Glossary of Chapter 1},
+  ]{
+      width = \textwidth,
+      colspec = {X[1,l,h]  X[1,l,h]  X[3,l,h]},
+      rowhead = 1, rowfoot = 0, % 每个分页里表头表尾的数量
+      % row{odd} = {blue8}, 
+      row{even} = {azure9},
+  }
+      
+  \toprule
+  \textbf{WORDS} & \textbf{MEANING} & \textbf{MEANING OR EXAMPLE}\\
+  \midrule
+
+  \textbf{excerpt}/\textipa{"eks3:pt}/ & \emph{v.} 摘录；引用  & If a long piece of writing or music is excerpted, short pieces from it are printed or played on their own. \\
+  \textbf{genre}/\textipa{"ZA:nr@}/ & \emph{n.} 体裁 & a particular type of art, writing, music etc, which has certain features that all examples of this type share.\\
+  {\textbf{mandate} \\ /\textipa{"m\ae ndeIt}/} & \emph{v.} 授权；强制执行；委托办理 & to tell someone that they must do a particular thing. \\
+  {\textbf{methodology} \\ /\textipa{""meT@"d6l@\textdyoghlig i}/} & \emph{n.} 方法学 & a set of methods and principles used to perform a particular activity. \\
+  \textbf{opt}/\textipa{6pt}/ & \emph{v.} 选择；挑选 & to choose one thing or do one thing instead of another \\
+  \textbf{pivotal}/\textipa{"pIv@tl}/ & \emph{adj.} 关键性的；核心的 & more important than anything else in a situation or system. \\
+  
+  \bottomrule
+
+  \end{longtblr}
+  }
+
+  \begin{problemset}
+    \item exercise 1
+    \item exercise 2
+    \item exercise 3
+  \end{problemset}
 
 \chapter{}
 \chapter{}
