@@ -6,6 +6,7 @@
 \usepackage{graphicx}
 \usepackage[]{amsmath}
 \usepackage[]{hyperref}
+\hypersetup{colorlinks, linkcolor=blue}
 \usepackage[]{bigstrut}
 \usepackage[]{xcolor}
 \usepackage[]{multicol}
@@ -22,10 +23,13 @@
 \usepackage[]{subfiles}
 \usepackage[]{siunitx}
 \usepackage[]{metalogo}
+\usepackage[]{tcolorbox}
+\tcbuselibrary{skins}
 \usepackage{geometry} 
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 
-
+\newtcolorbox[auto counter,number within=section]{sample}[2][]{%
+arc is angular,skin=bicolor,colbacklower=white,colback=blue!8!white,colframe=blue!46!black, arc=1mm,fonttitle=\bfseries, title={\heiti Sample}~\thetcbcounter: #2,#1}
 
 
 \begin{document}
@@ -95,11 +99,7 @@ The American Psychological Association (APA) Style (2010) states that an abstrac
 
 \section{Importance and Functions of an Abstract}
 
-An abstract is a distinct genre, and to some extent plays a pivotal role in academic readingand writing. In the era of information explosion, an enormous number of new publications are produced in the academic community each day. There is no practical way for every reader to get access to every new article, or to read every new publication even if it is accessible. Theabstracts published online, which are concise and comprehensive, can be obtained easily andquickly. Abstract reading, then, may be a useful starting point of any academic reading and writing. In this sense, an abstract is the most read part of an article.\sidenote{劳仑衣普桑，认至将指点效
-则机，最你更枝。想极整月正
-进好志次回总般，段然取向使
-张规军证回，世市总李率英茄
-持伴。}
+An abstract is a distinct genre, and to some extent plays a pivotal role in academic readingand writing. In the era of information explosion, an enormous number of new publications are produced in the academic community each day. There is no practical way for every reader to get access to every new article, or to read every new publication even if it is accessible. Theabstracts published online, which are concise and comprehensive, can be obtained easily andquickly. Abstract reading, then, may be a useful starting point of any academic reading and writing. In this sense, an abstract is the most read part of an article.\sidenote{劳仑衣普桑，认至将指点效则机，最你更枝。想极整月正进好志次回总般，段然取向使张规军证回，世市总李率英茄持伴。}
 
 An abstract has at least three functions (Huckin, 2001). First, it serves as a stand-alone mini text, giving readers a quick summary of a study's objectives, methodology, findings and conclusions, which are the major components of abstracts. Second, it serves as a screening device, and gives readers an adequate view on whether the full-length article is of great value to their needs and worth further reading. A good abstract, to some extent, increases the chance of being cited or referenced. Third, for those readers who do opt to read the article as a whole, the abetract serves as a preview, creating an interpretive frame that can guide reading.
 
@@ -119,7 +119,41 @@ Where no heading or label is used to indicate different parts of an abstract, it
 
 Journals mandate which style should be used, so check the author guidelines if you' re not sure. If it is not mentioned, keep an eye out for the type of abstracts preferable in the journals where you are willing to have your paper submitted and published. Write your abstracts in the style which dominates.
 
+% \tcbset{colback=blue!8!white,colframe=blue!46!black,
+% arc=1mm}
+% \begin{tcolorbox}[arc is angular,skin=bicolor,colbacklower=white,title={\heiti 例题}]
+% 这是一个 \textbf{tcolorbox}。
+% \tcblower
+% 这个是下部
+% \end{tcolorbox}
 
+
+\begin{sample}[label={myautocounter}]{\heiti}
+  \textbf{BACKGROUND} 
+  
+  In patients with acute heart failure, early intervention with an intravenous vasodilator has been proposed as a therapeutic goal to reduce cardiac-wall stress and, potentially, myocardialinjury, thereby favorably affecting patients' long-term prognosis.
+
+  \textbf{METHODS} 
+  
+  In this double-blind trial, we randomly assigned 2, 157 patients with acute heart failure to receive a continuous intravenous infusion of either ularitide at a dose of 15 ng per kilogram of body weight per minute or matching placebo for 48 hours, in addition to accepted therapy.
+  Treatment was initiated a median of 6 hours after the initial clinical evaluation. The coprimaryd outcomes were death from cardiovascular causes during a median follow-up of 15 months and a hierarchical composite end point that evaluated the initial 48-hour clinical course.
+  
+  \textbf{RESULTS} 
+  
+  Death from cardiovascular causes occurred in 236 patients in the ularitide group and 225 patients in the placebo group (21.7\% vs. 21.0\%; hazard ratio, 1.03;96\% confidence interval, 0.85 to 1.25; P=0.75). In the intention-to-treat analysis, there was no significant between-group difference with respect to the hierarchical composite outcome. The ularitide group had greater reductions in systolic blood pressure and in levels of N-terminal pro-brain natriuretic peptide than the placebo group. However, changes in cardiac troponin T levels during the infusion did not differ between the two groups in the 55\% of patients with paired data.
+
+  \textbf{CONCLUSIONS} 
+  
+  In patients with acute heart failure, ularitide exerted favorable physiological effects (without affecting cardiac troponin levels), but short-term treatment did not affect a clinical composite end point or reduce long-term cardiovascular mortality.
+
+  \begin{flushright}
+    ---Effect of Ularitide on Cardiovascular Mortality in Acute Heart Failure.
+
+    \emph{New England Journal of Medicine (2017)}
+  \end{flushright}
+
+  
+\end{sample}
 
 \chapter{}
 \chapter{}
