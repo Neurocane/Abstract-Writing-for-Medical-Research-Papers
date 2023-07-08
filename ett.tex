@@ -207,11 +207,11 @@ Journals mandate which style should be used, so check the author guidelines if y
 \end{sample}
 
 \begin{note}[label={myautocounter}]{\heiti Corpus used for this book}
-  The data used and analyzed in this book are from a custom-built corpus with 1.15 million tokens of medical research article (RA) abstracts. The discipline of medicine is divided into 18 sub-disciplines, and RA abstracts from 2 to 3 leading journals are randomly retrieved in each sub-discipline with relatively similar number of texts for each sub-discipline (Table 1). The journals selected are all with relatively high impact factors.
+  The data used and analyzed in this book are from a custom-built corpus with 1.15 million tokens of medical research article (RA) abstracts. The discipline of medicine is divided into 18 sub-disciplines, and RA abstracts from 2 to 3 leading journals are randomly retrieved in each sub-discipline with relatively similar number of texts for each sub-discipline (\autoref{tab:Sub-disciplines and journals in each sub-discipline}). The journals selected are all with relatively high impact factors.
 
-  \tcblower
+\end{note}
 
-  {\small
+{\small
   \begin{longtblr}[
       caption = {Sub-disciplines and journals in each sub-discipline},
       label = {tab:Sub-disciplines and journals in each sub-discipline},
@@ -221,6 +221,7 @@ Journals mandate which style should be used, so check the author guidelines if y
       rowhead = 1, rowfoot = 0, % 每个分页里表头表尾的数量
       % row{odd} = {blue8}, 
       row{even} = {LemonChiffon},
+      column{2} = {font=\itshape}
   }
     
     \toprule
@@ -250,7 +251,6 @@ Journals mandate which style should be used, so check the author guidelines if y
 
   \end{longtblr}
   }
-\end{note}
 
 \chapter{}
 \chapter{}
