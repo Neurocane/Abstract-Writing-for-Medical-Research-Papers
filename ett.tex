@@ -25,11 +25,12 @@
 \usepackage[]{metalogo}
 \usepackage[]{tcolorbox}
 \tcbuselibrary{skins}
+\tcbuselibrary{documentation}
 \usepackage{geometry} 
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 
 \newtcolorbox[auto counter,number within=section]{sample}[2][]{%
-arc is angular,skin=bicolor,colbacklower=white,colback=blue!8!white,colframe=blue!46!black, arc=1mm,fonttitle=\bfseries, title={\heiti Sample}~\thetcbcounter: #2,#1}
+arc is angular,parbox=false,before upper=\par,before lower=\par,skin=bicolor,colbacklower=white,colback=blue!8!white,colframe=blue!46!black, arc=1mm,fonttitle=\bfseries, title={\heiti Sample}~\thetcbcounter: #2,#1}
 
 
 \begin{document}
