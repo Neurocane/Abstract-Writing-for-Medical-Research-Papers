@@ -8,7 +8,7 @@
 \usepackage[]{hyperref}
 \hypersetup{colorlinks, linkcolor=blue}
 \usepackage[]{bigstrut}
-\usepackage[]{xcolor}
+\usepackage[svgnames]{xcolor}
 \usepackage[]{multicol}
 % \usepackage{chemfig}
 \usepackage{mhchem}
@@ -32,6 +32,9 @@
 
 \newtcolorbox[auto counter,number within=section]{sample}[2][]{%
 arc is angular,breakable,parbox=false,before upper=\par,before lower=\par,drop shadow,skin=bicolor,colbacklower=white,colback=blue!8!white,colframe=blue!46!black, arc=1mm,fonttitle=\bfseries, title={\heiti Sample}~\thetcbcounter: #2,#1}
+
+\newtcolorbox[auto counter,number within=section]{note}[2][]{%
+breakable,parbox=false,before upper=\par,before lower=\par,drop shadow,skin={spartan,bicolor},colbacklower=white,colback=red!3!white,colframe=brown!46!black,fonttitle=\bfseries, title={\heiti Note}~\thetcbcounter: #2,#1}
 
 
 \begin{document}
@@ -202,6 +205,52 @@ Journals mandate which style should be used, so check the author guidelines if y
 
 
 \end{sample}
+
+\begin{note}[label={myautocounter}]{\heiti Corpus used for this book}
+  The data used and analyzed in this book are from a custom-built corpus with 1.15 million tokens of medical research article (RA) abstracts. The discipline of medicine is divided into 18 sub-disciplines, and RA abstracts from 2 to 3 leading journals are randomly retrieved in each sub-discipline with relatively similar number of texts for each sub-discipline (Table 1). The journals selected are all with relatively high impact factors.
+
+  \tcblower
+
+  {\small
+  \begin{longtblr}[
+      caption = {Sub-disciplines and journals in each sub-discipline},
+      label = {tab:Sub-disciplines and journals in each sub-discipline},
+  ]{
+      width = \textwidth,
+      colspec = {X[1,l,h]  X[2,l,h]},
+      rowhead = 1, rowfoot = 0, % 每个分页里表头表尾的数量
+      % row{odd} = {blue8}, 
+      row{even} = {LemonChiffon},
+  }
+    
+    \toprule
+    Sub-discipline & Journal \\
+    \midrule
+
+    Anesthesiology & {British Journal of Anaesthesia \\ Anesthesiology \\ Anesthesia and Analgesia}\\
+    Dermatology & {Journal of American Academy of Dermatology \\ Giornale Italiano di Dermatologia e Venereologia}\\
+    Emergency Medicine & {Annals of Emergency Medicine \\ Internal and Emergency Medicine \\ Academic Emergency Medicine}\\
+    Geriatrics & {Neurobiology of Aging \\ Aging Cell \\ Age and Ageing}\\
+    Internal Medicine & {The New England Journal of Medicine \\ The Lancet \\ JAMA-Journal of the American Medical Association}\\
+    Medical Imaging & {The Journal of Nuclear Medicine \\ Investigative Radiology \\ Radiology}\\
+    Medical Laboratory & {Clinical Chemistry and Laboratory Medicine \\ Clinical Biochemistry}\\
+    Neurology & {The Lancet Neurology \\ Annals of Neurology}\\
+    Obstetrics and Gynecology & {Obstetrics \& Gynecology \\ American Journal of Obstetrics \& Gynecology \\ An International Journal of Obstetrics \& Gynecology}\\
+    Oncology & {Journal of Clinical Oncology \\ The lancet Oncology}\\
+    Ophthalmology & {Ophthalmology \\ American Journal of Ophthalmology \\ Archives of Ophthalmology}\\
+    Otolaryngology (ENT) & {Head \& Neck \\ Clinical Otolaryngology \\ Otolaryngology---Head \& Neck Surgery}\\
+    Pain Medicine & {The Clinical Journal of Pain \\ Pain Medicine \\ Regional Anesthesia and Pain Medicine}\\
+    Pediatrics & {Journal of the American academy of child \& Adolescent psychiatry \\ Pediatrics \\ JAMA pediatrics}\\
+    Physical medicine and rehabilitation & {Neurorehabilitation and neural repair \\ Journal of fluency disorders}\\
+    Psychiatry & {Molecular psychiatry \\ The American journal of psychiatry \\ JAMA psychiatry}\\
+    Sports medicine & {Medicine and Science in Sports and Exercise \\ Sports Medicine \\ The American Journal of Sports Medicine}\\
+    Surgery & {Annals of Surgery \\ American Journal of Transplantation \\ Journal of Neurology, Neurosurgery \& Psychiatry}\\
+
+    \bottomrule
+
+  \end{longtblr}
+  }
+\end{note}
 
 \chapter{}
 \chapter{}
