@@ -25,12 +25,13 @@
 \usepackage[]{metalogo}
 \usepackage[]{tcolorbox}
 \tcbuselibrary{skins}
+\tcbuselibrary{breakable}
 \tcbuselibrary{documentation}
 \usepackage{geometry} 
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 
 \newtcolorbox[auto counter,number within=section]{sample}[2][]{%
-arc is angular,parbox=false,before upper=\par,before lower=\par,skin=bicolor,colbacklower=white,colback=blue!8!white,colframe=blue!46!black, arc=1mm,fonttitle=\bfseries, title={\heiti Sample}~\thetcbcounter: #2,#1}
+arc is angular,breakable,parbox=false,before upper=\par,before lower=\par,drop shadow,skin=bicolor,colbacklower=white,colback=blue!8!white,colframe=blue!46!black, arc=1mm,fonttitle=\bfseries, title={\heiti Sample}~\thetcbcounter: #2,#1}
 
 
 \begin{document}
@@ -154,6 +155,52 @@ Journals mandate which style should be used, so check the author guidelines if y
   \end{flushright}
 
   
+\end{sample}
+
+\begin{sample}[label={myautocounter}]{\heiti}
+  \textbf{OBJECTIVE} 
+  
+  To evaluate the association between the parameters of 24-hour multichannel intraluminal impedance (MII)-pH monitoring and the symptoms or quality of life (QoL) in laryngopharyngeal reflux (LPR) patients.
+
+  \textbf{DESIGN} 
+  
+  Prospective cohort study without controls.
+
+  \textbf{SETTING} 
+  
+  University teaching hospital.
+
+  \textbf{METHODS} 
+  
+  Forty-five LPR patients were selected from subjects who underwent 24-hour MII-pH monitoring and were diagnosed with LPR from September 2014 to May 2015. Reflux Symptom Index (RSI), Health-related Quality of Life (HRQoL), Short Form 12 (SF-12) Survey questionnaires were surveyed. Spearman's correlation was used to analyse the association between the symptoms or QoL and 24-hour MII-pH monitoring.
+
+  \textbf{RESULTS}
+
+  Most parameters in 24-hour MII-pH monitoring showed weak or no correlation with RSI, HRQoL and SF-12. Only number of non-acid reflux events that reached the larynx and pharynx (LPR-non-acid) and number of total reflux events that reached the larynx and pharynx (LPR-total) parameters showed strong correlation with heartburn in RSI (R=0.520, $P<0.001$, R=0.478, $P=0.001$, respectively). Multiple regression analysis showed that there was only one significant regression coefficient between LPR-non-acid and voice/hoarseness portion of HRQoL (b=1.719, $P=0.022$).
+
+  \textbf{CONCLUSION} 
+
+  Most parameters of 24-hour MII-pH monitoring did not reflect subjective symptoms or QoL in patients with LPR.
+
+  \begin{flushright}
+    ---Association between 24-hour combined multichannel intraluminal impedance-pH monitoring and symptoms or quality of life in patients with laryngopharyngeal reflux. 
+    
+    \emph{Clinical Otolaryngology (2017)}
+  \end{flushright}
+
+  
+\end{sample}
+
+\begin{sample}[label={myautocounter}]{\heiti}
+  Due to the high incidence of recurrent squamous cell carcinoma of the head and neck andd the toxicity profile of current salvage regimens, there is a need for tolerable and effective treatment options. We performed a retrospective matched case series to report our experience with recurrent high-risk patients who received capecitabine (CAP) therapy in the adjuvant setting after salvage therapy. The 5-year recurrence-free survival rates for the CAP and control cohorts were 54\% (95\% CI, 0.27\%--0.75\%) and 27\% (95\% CI, 0.09\%--0.50\%), respectively.Multivariable Cox modeling showed a significant improvement in recurrence-free survival in thed CAP cohort (hazard ratio, 0.19; 95\% CI, 0.04--0.92; $P=.0 392$). While this was a respective analysis that could not control for all variables, these exploratory findings offer insights that may inform a prospective study to determine CAP efficacy.
+  
+  \begin{flushright}
+    ---Capecitabine after Surgical Salvage in Recurrent Squamous Cell Carcinoma of Head and Neck. 
+    
+    \emph{Otolaryngology---Head \& Neck Surgery (2017)}
+  \end{flushright}
+
+
 \end{sample}
 
 \chapter{}
