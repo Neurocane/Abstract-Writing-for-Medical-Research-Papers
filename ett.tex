@@ -15,6 +15,8 @@
 \usepackage{mhchem}
 \usepackage[tone,extra,safe]{tipa}
 \usepackage[normalem]{ulem}
+% \usepackage[]{ninecolors}
+% \NineColors{saturation=low}
 \usepackage{tabularray}
 \UseTblrLibrary{booktabs}
 % \usepackage[]{paracol}
@@ -482,6 +484,220 @@ Building on this, the successful individualized prediction of BMI by means of mu
 In the genre with an obvious hierarchical structure, moves are usually composed of the steps or sub-moves, which are the subordinate units. In medical RA abstracts, some steps are conventional steps and others are optional steps. The type and frequency of the steps also show the rhetorical purpose of the author. Lexical signals could be helpful in recognizing the steps, which are illustrated in \hyperref[chapter3]{Chapter 3} to \hyperref[chapter6]{Chapter 6}.
 
 The abstracts of different journals in the corpus are randomly extracted, with 6 articles in each sub-discipline, totaling 108 articles. Through manual recognition, the steps and communication functions that constitute each step are established (Table 1). If the step is used in more than 80\% of articles, it is considered conventional, otherwise optional.
+
+{\small
+\begin{longtblr}[
+    caption = {Move/Step Scheme of Medical RA Abstracts},
+    label = {tab:Move/Step Scheme of Medical RA Abstracts},
+]{
+    width = \textwidth,
+    colspec = {X[1,l,h]  X[1,c,h]  X[3,l,h] X[1,c,h]},
+    rowhead = 1, rowfoot = 0, % 每个分页里表头表尾的数量
+    % row{odd} = {blue8}, 
+    % row{even} = {azure9},
+    row{2-6} = {azure9},
+    row{7-14} = {white},
+    row{15-17} = {azure9},
+    row{18-22} = {white},
+}
+    
+\toprule
+\textbf{Move/Step} & \textbf{Move/Step Abbr.} & \textbf{Communicative functions} & \textbf{Percentage}\\
+\midrule
+Move1 & M1 & Creating a research territory/space &  \\
+\hspace*{1ex}Move1Step1 & 1S1 & Presenting current knowledge or relevant information established by previous studies & 56.5\% \\
+\hspace*{1ex}Move1Step2 & 1S2 & Establishing a niche/problem\sidenotemark[1] & 41.7\% \\
+\hspace*{1ex}Move1Step3a & 1S3a & Indicating main purposes & 83.3\% \\
+\hspace*{1ex}Move1Step3b & 1S3b & Raising hypotheses & 2.8\% \\
+Move2 & M2 & Describing research process &  \\
+\hspace*{1ex}Move2Step1 & 2S1 & Reporting on medical ethics review & 2.8\% \\
+\hspace*{1ex}Move2Step2 & 2S2 & Explaining briefly research design & 54.6\% \\
+\hspace*{1ex}Move2Step3 & 2S3 & Describing subjects or data and their selection criteria & 92.6\% \\
+\hspace*{1ex}Move2Step4 & 2S4 & Describing experimemal procedure, such as interventions, examinations, etc. & 60.2\% \\
+\hspace*{1ex}Move2Step5 & 2S5 & Describing main outcomes and their measures & 93.5\% \\
+\hspace*{1ex}Move2Step6 & 2S6 & Describing data analysis methods & 10.2\% \\
+\hspace*{1ex}Move2Step7 & 2S7 & Reporting on registration information & 9.3\% \\
+Move3 & M3 & Summarizing results &  \\
+\hspace*{1ex}Move3Step1 & 3S1 & Providing information on valid samples & 43.5\% \\
+\hspace*{1ex}Move3Step2 & 3S2 & Illustrating overall observation or main results & 100\% \\
+Move4 & M4 & Drawing conclusions &  \\
+\hspace*{1ex}Move4Step1 & 4S1 & Reiterating pivotal results & 16.7\% \\
+\hspace*{1ex}Move4Step2 & 4S2 & Indicating limitations & 3.7\% \\
+\hspace*{1ex}Move4Step3 & 4S3 & Stating the significance of the results & 99.1\% \\
+\hspace*{1ex}Move4Step4 & 4S4 & Predicting future studies & 19.4\% \\
+
+\bottomrule
+
+\end{longtblr}
+}
+
+\sidenotetext[1]{{\small niche 原本指法国天主教徒房屋墙壁上预留用于放置圣母玛利亚的神龛。20世纪80年代，该词以“利基市场 (Niche Market) ”被美国商学家引入市场营销领域，意指那些被市场中的统治者/有绝对优势的企业忽略的某些细分市场。英文论文写作中，niche引申为被主流研究忽视的问题，即现有研究的缺陷、不足，指向该论文意图解决的问题。}}
+
+\begin{sample}[label={myautocounter}]{\heiti}
+  \textbf{BACKGROUND}
+
+  \textbf{(1S1)} Graded exercise therapy is an effective and safe treatment for chronic fatigue syndrome, \textbf{(1S2)} but it is therapist intensive and availability is limited. \textbf{(1S3a)} We aimed to test the efficacy and safety of graded exercise delivered as guided self-help.
+  
+  \textbf{METHODS}
+
+  \textbf{(2S2)} In this pragmatic randomised controlled trial, \textbf{(2S3)} we recruited adult patients (18 years and older) who met the UK National Institute for Health and Care Excellence criteria for chronic fatigue syndrome from two secondary-care clinics in the UK. \textbf{(2S4)} Patients were randomly assigned to receive specialist medical care (SMC) alone (control group) or SMC with additional guided graded exercise self-help (GES). Block randomisation (randomly varying block sizes) was done at the level of the individual with a computer-generated sequence and was stratified by centre, depression score, and severity of physical disability. Patients and physiotherapists were necessarily unmasked from intervention assignment; the statistician was masked from intervention assignment. SMC was delivered by specialist doctors but was not standardised; GES consisted of a self-help booklet describing a six-step graded exercise programme that would take roughly 12 weeks to complete, and up to four guidance sessions with a physiotherapist over 8 weeks (maximum 90 min in total). \textbf{(2S5)} Primary outcomes were fatigue (measured by the Chalder Fatigue Questionnaire) and physical function (assessed by the Short Form-36 physical function subscale); both were self-rated by patients at 12 weeks after randomisation and analysed in all randomised patients with outcome data at follow-up (ie, by modified intention to treat). We recorded adverse events, including serious adverse reactions to trial interventions.\textbf{ (2S6) }We used multiple linear regression analysis to compare SMC with GES, adjusting for baseline and stratification factors.\textbf{ (2S7) }This trial is registered at ISRCTN, number ISRCTN22975026.
+  
+  \textbf{FINDINGS}
+
+  \textbf{(3S1)} Between May 15,2012, and Dec 24,2014, we recruited 211 eligible patients, of whom 107 were assigned to the GES group and 104 to the control group. \textbf{(3S2) }At 12 weeks, compared with the control group, mean fatigue score was 19.1 (SD-7.6) in the GES group and
+  22.9(6.9) in the control group (adjusted difference-4.2 points, 95\% CI -6.1 to -2.3, $P<0.0 001$; effect size 0.53) and mean physical function score was 55.7(23.3) in the GES groupand 50. 8(25.3) in the control group (adjusted difference 6.3 points, 1.8 to 10.8, P=0.006;
+  0.20). No serious adverse reactions were recorded and other safety measures did not differ between the groups, after allowing for missing data.
+
+  \textbf{INTERPRETATION}
+
+  \textbf{(4S2)} GES is a safe intervention that might reduce fatigue and, to a lesser extent, physical disability for patients with chronic fatigue syndrome. \textbf{(4S4)} These findings need confirmation and extension to other health-care settings.
+  
+  \begin{flushright}
+    ---Guided graded exercise self-help plus specialist medical care versus specialist medical care alone for chronic fatigue syndrome (GETSET): a pragmatic randomised controlled trial. 
+    
+    \emph{The Lancet (2017)}
+  \end{flushright}
+  
+\end{sample}
+
+\section{Glossary}
+
+{\small
+\begin{longtblr}[
+    caption = {Glossary of Chapter 2},
+    label = {tab:Glossary of Chapter 2},
+    note{a} = {英文论文中指代当前文献中的差距、问题或缺陷。即现有研究尚未解决的部分。},
+]{
+    width = \textwidth,
+    colspec = {X[1,l,h]  X[1,l,h]  X[3,l,h]},
+    rowhead = 1, rowfoot = 0, % 每个分页里表头表尾的数量
+    % row{odd} = {blue8}, 
+    row{even} = {azure9},
+}
+    
+\toprule
+\textbf{WORDS} & \textbf{MEANING} & \textbf{MEANING OR EXAMPLE}\\
+\midrule
+
+\textbf{conventional}/\textipa{k@n"venS@nl}/ & \emph{adj.} 传统的；常规的 & a conventional method, product, practice, etc. has been used for a long time and is considered the usual type \\
+\textbf{ethics}/\textipa{"eTiks}/ & \emph{n.} 伦理标准 & [plural] moral rules or principles of behaviour for deciding what is right and wrong \\
+\textbf{intervention}/\textipa{""Int@"venSn}/ & \emph{n.} 干预；介入 & an action or ministration that produces an effect or is intended to alter the course of a pathologic process \\
+\textbf{niche}/\textipa{ni:S}/ & \emph{n.} 利基\TblrNote{a}；生态位；微环境  & a gap in the previous research \\
+\textbf{reiterate}/\textipa{ri:"It@reIt}/ & \emph{v.} 重申  & to say something again, usually in order to emphasize it \\
+
+\bottomrule
+
+\end{longtblr}
+}
+
+\begin{problemset}
+  \item \textbf{Identify the four moves in the abstracts.}
+  
+  \textbf{Abstract 1}
+
+  \hspace*{2em}Objective: To evaluate the association between the parameters of 24-hour multichannel intraluminal impedance (MII)-pH monitoring and the symptoms or quality of life (QoL) in laryngopharyngeal reflux (LPR) patients.
+  
+  \hspace*{2em}Design: Prospective cohort study without controls.
+  
+  \hspace*{2em}Setting: University teaching hospital.
+  
+  \hspace*{2em}Methods: Forty-five LPR patients were selected from subjects who underwent 24-hour MII-
+  pH monitoring and were diagnosed with LPR from September 2014 to May 2015. Reflux Symptom Index (RSI), Health-related Quality of Life (HRQoL), Short Form 12 (SF-12) Survey questionnaires were surveyed. Spearman's correlation was used to analyse the association between the symptoms or QoL and 24-hour MII-pH monitoring.
+  
+  \hspace*{2em}Results: Most parameters in 24-hour MII-pH monitoring showed weak or no correlation with RSI, HRQoL and SF-12. Only number of non-acid reflux events that reached the larynxand pharynx (LPR-non-acid) and number of total reflux events that reached the larynx and pharynx (LPR-total) parameters showed strong correlation with heartburn in RSI (R=0.520, $P<0$.001, R=0.478, P=0.001, respectively). Multiple regression analysis showed that there was only one significant regression coefficient between LPR-non-acid and voice/hoarseness portion of HRQoL (b=1.719, P=0.022).
+  
+  \hspace*{2em}Conclusion: Most parameters of 24-hour MII-pH monitoring did not reflect subjective symptoms or QoL in patients with LPR.
+  
+  \begin{flushright}
+    ---Association between 24-hour combined multichannel intraluminal impedance-pH monitoring and symptoms or quality of life in patients with laryngopharyngeal reflux. \emph{Clinical Otolaryngology (2017)}
+  \end{flushright}
+  
+  \textbf{Abstract 2}
+  
+  \hspace*{2em}Skeletal muscle mitochondrial oxidative capacity declines with age and negatively affects walking performance, but the mechanism for this association is not fully clear. We tested the hypothesis that impaired oxidative capacity affects muscle performance and, through this mechanism, has a negative effect on walking speed. Muscle mitochondrial oxidative capacity was measured by in vivo phosphorus magnetic resonance spectroscopy as the postexercise phosphocreatine resynthesis rate, Kpc, in 326 participants (154 men), aged 24-97 years (mean 71), in the Baltimore Longitudinal Study of Aging. Muscle strength and quality were determined by knee extension isokinetic strength, and the ratio of knee extension strength to thigh muscle cross-sectional area derived from computed topography, respectively. In multivariate linear regression analyses, kpc, was associated with muscle strength ($\beta=0. 140, P=0.007$) and muscle quality ($\beta=0.127, P=0.022$), independent of age, sex, height, and weight; muscle strength was also a significant independent correlate of walking speed ($P<0. 02$ for all tasks) and in a formal mediation analysis significantly attenuated the association between kpc and three of four walking tasks (18\%-29\% reduction in $\beta$ for kpcr). This is the first demonstration in human adults that mitochondrial function affects muscle strength and that inefficiency in muscle bioenergetics partially accounts for differences in mobility through this mechanism.
+
+  \begin{flushright}
+    ---Muscle strength mediates the relationship between mitochondrial energetics and walking performance. \emph{Aging Cell (2017)}
+  \end{flushright}
+
+  \textbf{Abstract 3}
+
+  \hspace*{2em}Propacetamol, a water-soluble prodrug form of paracetamol, is hydrolyzed by esterase to generate paracetamol in the blood. Each gram of propacetamol is equal to 0.5 g of paracetamol. It has been reported to cause hypotension in critically ill patients with a fever. We aimed to investigate the hemodynamic effects of propacetamol for the control of fever in patients with diverse severities of illness who were managed in the emergency department (ED). We also aimed to identify clinical factors related to significant hemodynamic alterations in ED patients. This was a retrospective study of 1507 ED patients who received propacetamol. Significant hemodynamic alterations were defined as systolic blood pressure (SBP) <90 mmHg or diastolic blood pressure (DBP) <60 mmHg, or a drop in SBP >30 mmHg, which required treatments with a bolus of fluid or vasopressor administration. Postinfusion SBP and DBP were significantly lower than the preinfusion SBP and DBP. A clinically significant drop in BP occurred in 162 (10.7\%) patients, and interventions were necessary. Among the predictors assessed, congestive heart failure (OR 6.21,95\% CI 2.67--14.45) and chills (OR 3.10,95\% CI 2.04--4.70) were independent factors for a significant hemodynamic change. Administrationof propacetamol can provoke a reduction in BP in ED patients. This reduction was clinically significant for 10\% of infusions. Clinicians should be aware of this potential deleterious effect, especially in patients with congestive heart failure or who experience chills prior to the administration of propacetamol.
+
+  \begin{flushright}
+    ---Clinically significant hemodynamic alterations after propacetamol injection in the emergency department: prevalence and risk factors. \emph{Internal and Emergency Medicine (2016)}
+  \end{flushright}
+
+  \item \textbf{Reorder the four moves in the abstracts.}
+  
+  \textbf{Abstract 1}
+
+  \hspace*{2em}Methods: A dual-virus tracing strategy combining retroviral birthdating with rabies virus-
+  mediated putative retrograde trans-synaptic tracing was used to identify and compare presynaptic inputs onto adult-born and early-born DGCs in the rat pilocarpine model of mTLE.
+
+  \hspace*{2em}---Move \uline{\hspace*{3em}}
+  
+  \hspace*{2em}Objective: To understand how monosynaptic inputs onto adult-born dentate granule cells (DGCs) are altered in experimental mesial temporal lobe epilepsy (mTLE) and whether their integration differs from early-born DGCs that are mature at the time of epileptogenesis.
+
+  \hspace*{2em}---Move \uline{\hspace*{3em}}
+  
+  \hspace*{2em}Interpretation: These data support the presence of substantial hippocampal circuit remodeling after an epileptogenic insult that generates prominent excitatory monosynaptic inputs, both local recurrent and widespread feedback loops, onto DGCs. Both adult-born and early-bom DGCs are targets of new inputs from other DGCs as well as from CA3 and CA1 pyramidal cells after pilocarpine treatment, changes that likely contribute to epileptogenesis in experimental mTLE.
+  
+  \hspace*{2em}---Move \uline{\hspace*{3em}}
+
+  \hspace*{2em}Results: Our results demonstrate that hilar ectopic DGCs preferentially synapse onto adult-born DGCs after pilocarpine-induced status epilepticus (SE), whereas normotopic DGCs synapse onto both adult-born and early-born DGCs. We also find that parvalbumin- and somatostatin-interneuron inputs are greatly diminished onto early-born DGCs after SE. However, somatostatin-interneuron inputs onto adult-born DGCs are maintained, likely due topreferential sprouting. Intriguingly, CA3 pyramidal cell backprojections that specifically target adult-born DGCs arise in the epileptic brain, whereas axons of interneurons and pyramidal cells in CA1 appear to sprout across the hippocampal fssure to preferentilly synapse onto early-bomDGCs.
+
+  \hspace*{2em}---Move \uline{\hspace*{3em}}
+
+  \begin{flushright}
+    ---Rabiestracing of birthdated dentae granule cells in rat temporal lobe epilepsy. \emph{Annals of Neurology(2017)}
+  \end{flushright}
+
+  \textbf{Abstract 2}
+  
+  \hspace*{2em}We identified a mssense Asn396Ser mutation (rs77960347) in the endothelial lipase (LIG) gene, occurring with an allele frequency of 1\% in the general population, which was significantly associated with depressive symptoms (P-value $= 5.2 \times 10--08, \beta=7.2$). Replication in three independent data sets ($N= 3612$) confirmed the association of Asn396Ser (P-value = $7.1 \times 10-03$, $\beta = 2.55$) with depressive symptoms.
+
+  \hspace*{2em}---Move \uline{\hspace*{3em}}
+
+  \hspace*{2em}Despite a substantial genetic component, efforts to identify common genetic variation underlying depression have largely been unsuccessful. In the current study we aimed to identify rare genetic variants that might have large effects on depression in the general population.
+
+  \hspace*{2em}---Move \uline{\hspace*{3em}}
+
+  \hspace*{2em}Using high-coverage exome-sequencing, we studied the exonic variants in 1 265 individuals from the Rotterdam study (RS), who were assessed for depressive symptoms.
+
+  \hspace*{2em}---Move \uline{\hspace*{3em}}
+
+  \hspace*{2em}LIPG is predicted to have enzymatic function in steroid biosynthesis, cholesterol biosynthesis and thyroid hormone metabolic processes. The Asn396Ser variant is predicted tod have a damaging effect on the function of LIPG. Within the discovery population, carriers also showed an increased burden of white matter lesions (P-value=$3.3 \times 10-02$) and a higher risk of Alzheimer's disease (odds ratio=2.01; P-value = 2.8x 10-02) compared with the noncarriers. Together, these findings implicate the Asn396Ser variant of LIPG in the pathogenesis of depressive symptoms in the general population.
+
+  \hspace*{2em}---Move \uline{\hspace*{3em}}
+
+  \begin{flushright}
+    ---Exome-sequencing in a large population-based study reveals a rare Asn396Ser variant in the LIPG gene associated with depressive symptoms. \emph{Molecular Psychiatry (2017)}
+  \end{flushright}
+
+  \textbf{Abstract 3}
+
+  \hspace*{2em}Conclusion: This study suggests that hearing problems in later life could increase the risk of having difficulties performing IADLs, which include more complex everyday tasks such as shopping and light housework. However, further studies are needed to determine the associations observed including the underlying pathways.
+  
+  \hspace*{2em}---Move \uline{\hspace*{3em}} 
+  
+  \hspace*{2em}Methods: Data were collected on self-reported hearing impairment including hearing aid use, and disability assessed as mobility limitations (problems walking/taking stairs), difficulties with activities of daily living (ADL) and instrumental ADL (IADL). Mortality data were obtained from the National Health Service register.
+  
+  \hspace*{2em}---Move \uline{\hspace*{3em}}
+  
+  \hspace*{2em}Background and objective: Hearing impairment is common in older adults and has been implicated in the risk of disability and mortality. We examined the association between hearing impairment and risk of incident disability and all-cause mortality.
+
+  \hspace*{2em}---Move \uline{\hspace*{3em}}
+  
+  \hspace*{2em}Results: Among 3,981 men, 1,074(27\%) reported hearing impairment. Compared with men with no hearing impairment, men who could hear and used a hearing aid, and men who could not hear despite a hearing aid had increased risks of IADL difficulties (age-adjusted OR 1.86, 95\% CI 1.29--2.70; OR 2.74, 95\% CI 1.53--4.93, respectively). The associations remained after further adjustment for covariates including social class, lifestyle factors, comorbidities and social engagement. Associations of hearing impairment with incident mobility limitations, incident ADL difficulties and all-cause mortality were attenuated on adjustment for covariates.
+  
+  \hspace*{2em}---Move \uline{\hspace*{3em}}
+  
+  \begin{flushright}
+    ---Hearing impairment and incident disability and all-cause mortality in older British community-dwelling men. \emph{Age and Ageing (2016)}
+  \end{flushright}
+  
+\end{problemset}
 
 
 \chapter{}\label{chapter3}
