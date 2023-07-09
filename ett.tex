@@ -41,6 +41,9 @@ breakable,parbox=false,before upper=\par,before lower=\par,drop shadow,skin={spa
 \newtcolorbox[auto counter,number within=section]{task}[2][]{%
 colback=Emerald!10,colframe=cyan!40!black,fonttitle=\bfseries,title={\heiti Task}~\thetcbcounter: #2,#1}
 
+\newtcolorbox[auto counter,number within=subsection]{eg}[2][]{%
+attach title to upper,coltitle=black,arc=0mm,top=0mm,boxrule=0pt,beforeafter skip balanced=0pt,colback=Thistle!80!red!20!white,colframe=white,fonttitle=\upshape\bfseries,fontupper=\itshape,title={\heiti E.g.}~\thetcbcounter:\ #2,#1}
+
   
 \usepackage[]{adforn}
 % \renewcommand{\chaptername}{第 \thechapter{} 章}
@@ -1030,12 +1033,123 @@ It needs to be mentioned, however, that these steps can also be presented with d
 \section{Language Features in Each Step}
 
   \subsection{Step 1(1S1) Presenting current knowledge or relevant information established by previous studies}
+
     \subsubsection{Step Analysis}
+
     With this step authors introduce naturally the research having been conducted. In this step, current knowledge or relevant information established by previous studies is presented or explained, which might include the pertinent mechanism or definition, the possibility of a phenomenon, the significance of a certain study, etc.
     
-    There are two ways that this step could be put forward. Authors could present the knowledge or information in the same scope (e. g. 1). Also, the authors could introduce the conclusions of relevant previous studies (e. g.2). In the latter one authors always employ words or phrases, such as “preclinical studies", to indicate the source of the information (e.g.2)
+    There are two ways that this step could be put forward. Authors could present the knowledge or information in the same scope (E.g.~\ref{eg:1s1-1}). Also, the authors could introduce the conclusions of relevant previous studies (E.g.~\ref{eg:1s1-2}). In the latter one authors always employ words or phrases, such as “preclinical studies", to indicate the source of the information (E.g.~\ref{eg:1s1-2})
     
+    \begin{eg}[label={eg:1s1-1}]{}
+      Topical immunomodulators(Tl)-including corticosteroids, calcineurin inhibitors, and vitamin D analogues-are commonly prescribed in multiple specialties,$\dots$
+    \end{eg}
 
+    \begin{eg}[label={eg:1s1-2}]{}
+      \uline{Preclinical studies} have found radiotherapy enhances antitumour immune responses.
+    \end{eg}
+
+    \subsubsection{Language Realizations}
+
+    Simple present tense is often used in this step to describe the current understanding of the topic.
+
+    \begin{eg}[label={myautocounter}]{}
+      In chronic hemodialysis, physical functioning (PF) \uline{is known} to be poor.
+    \end{eg}
+
+    While ``previous studies'' or other phrases with similar meaning are used as the subject of the sentence, present perfect tense is preferred. However, simple present tense is still used to refer to the current knowledge or relevant information established by previous studies.
+
+    \begin{eg}[label={myautocounter}]{}
+      Previous studies have shown that more active older adults have better cognition and brain health based on a variety of structural neuroimaging measures.
+    \end{eg}
+
+    \begin{task}[label={myautocounter}]{\heiti Corpus-based task}
+      What kind of verb is often used in present perfect tense in M1?
+    \end{task}
+
+    Both active voice and passive voice could be used at this step.
+
+    \begin{eg}[label={myautocounter}]{}
+      Physicians \uline{are} often \uline{asked} to prognosticate soon after a patient presents with stroke.
+    \end{eg}
+
+    \begin{eg}[label={myautocounter}]{}
+      Youth baseball frequently \uline{results} in repetitive strain injuries.
+    \end{eg}
+
+    Modal auxiliary verbs, such as ``may'', ``can'', as well as other words indicating likelihood, such as ``possible'', are commonly used in this step.
+
+    \begin{eg}[label={myautocounter}]{}
+      Urban design \uline{may} affect children's habitual physical activity by influencing active commuting and neighborhood play.
+    \end{eg}
+
+    \begin{eg}[label={myautocounter}]{}
+      Hirsutism in females \uline{can} be a source of considerable psychological distress and a threat to female identity.
+    \end{eg}
+
+    \begin{eg}[label={myautocounter}]{}
+      It is \uline{possible} that psychological counseling could enhance stuttering treatment outcomes.
+    \end{eg}
+
+    \subsubsection{Lexical Chunks}
+
+    \begin{enumerate}
+      \item has been associated with
+      \begin{eg}[label={myautocounter}]{}
+        Ethnicity \uline{has been associated with} clinical and experimental pain responses.
+      \end{eg}
+
+      \item has been shown to
+      \begin{eg}[label={myautocounter}]{}
+        Estrogen administration following menopause \uline{has been shown to} support hippocampally mediated cognitive processes.
+      \end{eg}
+    \end{enumerate}
+  
+  \subsection{Step 2(1S2) Establishing a niche/problem}
+
+    \subsubsection{Step Analysis}
+
+    In this step, negative evaluations are often given to the information provided at Step 1, including the limitations or the defects of the previous studies, which leaves a gap to be filled, a problem to be addressed or an idea to be tested. In other words, this step implies the value and significance of the authors' research.
+
+    \begin{eg}{}
+      However, to date, underlying neuronal mechanisms of these WM load-dependent activation changes in aging remain \uline{poorly understood}.
+    \end{eg}
+
+    \subsubsection{Language Realizations}
+
+    Simple present tense is usually seen in this step. But when the word ``study'' serves as the subject of an active sentence, or in a passive sentence as the unexpressed agent, present perfect tense is more often employed.
+
+    \begin{eg}{}
+      Despite the availability of objective tests, gastroesophageal reflux disease (GERD) diagnosis and management in infants \uline{remains} controversial and highly variable.
+    \end{eg}
+
+    \begin{eg}{}
+      However, no study \uline{has} directly \uline{compared} these outcomes between sports.
+    \end{eg}
+
+    Words such as ``however'' and ``but'' could be used to lead the readers from Step 1 to Step2, placing an emphasis on the problem or gap to be pointed out.
+
+    \begin{eg}{}
+      Delirium is associated with adverse postoperative outcomes, \uline{but} controversy exists regarding whether delirium is an independent predictor of mortality.
+    \end{eg}
+
+    \begin{eg}{}
+      Excellent outcomes have been reported for anterior cruciate ligament (ACL) reconstruction (ACLR) in professional athletes in a number of different sports. \uline{However}, no study has directly compared these outcomes between sports.
+    \end{eg}
+
+    Besides the two words mentioned above, other words indicating a contrast or a negative meaning, such as ``not'' or ``unknown'', can also be seen as a signal for 1S2.
+
+    \begin{eg}{}
+      Validated models to predict risk for complications are \uline{not} available, and the effect of treatment on risk is \uline{unknown}.
+    \end{eg}
+
+    \subsubsection{Lexical Chunks}
+
+    \begin{enumerate}
+      \item little is known about the
+      \begin{eg}{}
+        However, \uline{little is known about the} effect of pharmacological PHD inhibition on tumor expansion, and on liver regeneration after surgical resection.
+      \end{eg}
+    \end{enumerate}
 
 \section{Sample Reading}
 
