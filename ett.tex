@@ -6,8 +6,6 @@
 \usepackage{graphicx}
 \usepackage[]{amsmath}
 \usepackage[]{amssymb}
-\usepackage[]{hyperref}
-\hypersetup{colorlinks, linkcolor=blue}
 \usepackage[]{bigstrut}
 \usepackage[dvipsnames,svgnames]{xcolor}
 \usepackage[]{multicol}
@@ -58,6 +56,9 @@ attach title to upper,coltitle=black,arc=0mm,top=0mm,boxrule=0pt,beforeafter ski
   \begin{enumerate}}{
   \end{enumerate}}
 
+
+\usepackage[]{hyperref}
+\hypersetup{colorlinks, linkcolor=blue}
 
 \begin{document}
 
@@ -112,6 +113,10 @@ attach title to upper,coltitle=black,arc=0mm,top=0mm,boxrule=0pt,beforeafter ski
     \item \textbf{编译环境}： \XeLaTeX
     \item \textbf{TeX Live版本}： TeX Live 2022
 \end{itemize}
+
+\section*{命令环境注释}
+
+\paragraph*{e.g.环境} 标签命名规则：eg:\verb|<语步/语阶缩写>|-\verb|本章节e.g.e.g.环境序号|，如：\verb|label={eg:1s1-1}|
 
 \tableofcontents
 
@@ -1542,7 +1547,319 @@ Three samples of M1 are presented here, followed by a detailed analysis on the l
 \end{problemset}
 
 
-\chapter{}\label{chapter4}
+\chapter{Move Two}\label{chapter4}
+
+Move Two (M2) describes the research process. In this move, the author states the way the problem has been studied. This might include the subjects and the methodology followed, among other things. In a 4-or 5-paragraphed abstract, M2 is usually a single paragraph; in abstracts with more than 5 paragraphs, M2 is divided into several paragraphs with a heading in front of each, which is clearer and more specific.
+
+\section{Steps in M2}
+
+Whichever form is M2 in, it can be further divided into several steps. Depending on different research types, the steps in M2 may include:
+
+2S1 Reporting on medical ethics review2S2 Explaining briefly research design
+
+2S3 Describing subjects or data and their selection criteria
+
+2S4 Describing experimental procedure, such as interventions, examinations, etc.
+
+2S5 Describing main outcomes and their measures
+
+2S6 Describing data analysis methods
+
+2S7 Reporting on registration information 
+
+In most cases these steps follow the order listed above to fulfill the authors' communicative purposes (Sample \ref{sam:M2_1} \& \ref{sam:M2_2}). Sometimes some steps may be embedded with others (Sample \ref{sam:M2_1} \& \ref{sam:M2_3}). For instance, 2S2 could be embedded with 2S3, 2S4, and 2S1; 2S3 could be embedded in 2S2, 2S4, and 2S5, and so on. The order of the steps may differ from the above-mentioned mode. In most abstracts, M2 includes 2S2, 2S3, 2S4 and 2S5. Some of the steps are optional in an abstract, especially 2S1, 2S6 and 2S7 (Sample \ref{sam:M2_1} \& \ref{sam:M2_2}).
+
+\begin{sample}[label={sam:M2_1}]{\heiti}
+
+  \textbf{METHOD} 
+  
+  Randomized controlled trial for adolescents (12--18 years of age) with recent (past 3 months) suicide attempts or other self-harm. Youth were randomized either to SAFETY or to treatment as usual enhanced by parent education and support accessing community treatment (E-TAU). Outcomes were evaluated at baseline, 3 months, or end of treatment period, and were followed up through 6 to 12 months. The primary outcome was youth-reported incident suicide attempts through the 3-month follow-up.
+  
+  \begin{flushright}
+    ---Cognitive-Behavioral Family Treatment for Suicide Attempt Prevention: A Randomized Controlled Trial. \emph{Journal of the American Academy of Child and Adolescent Psychiatry (2017)}
+  \end{flushright}
+
+  \tcblower
+
+  \noindent \textbf{STEP IDENTIFICATION}
+
+  \vspace*{2pt}
+  {\small\noindent
+  \begin{tblr}{colspec={X[1,c]X[3,l]},cell{even}{1,2} = {azure9}}
+    \toprule
+    \textbf{Step} & \textbf{Sample} \\ 
+    \midrule
+    
+    2S3 with 2S2 embedded & Randomized controlled trial for adolescents (12-18 years of age) with recent (past 3 months) suicideattempts or other self-harm. \\
+    2S4 & Youth were randomized either to SAFETY or to treatment as usual enhanced by parent education and support accessing community treatment (E-TAU). \\
+    2S5 & Outcomes were evaluated at baseline, 3 months, or end of treatment period, and were followed up through 6 to 12 months. The primary outcome was youth-reported incident suicide attempts through the 3-month follow-up. \\
+
+    \bottomrule
+  \end{tblr}
+  }
+
+\end{sample}
+
+\begin{sample}[label={sam:M2_2}]{\heiti}
+  
+  \textbf{DESIGN} 
+  
+  Cross-sectional observational study.
+
+  \textbf{PARTICIPANTS} 
+  
+  One hundred nineteen children 2 to 16 years of age (mean age, 9.4 years; standard deviation [SD], 4.56 years) with glaucoma and their parents.
+
+  \textbf{METHODS} 
+  
+  Completion of 3 validated instruments for children to assess (1) functional visual ability (FVA) with the Cardiff Visual Ability Questionnaire for Children (CVAQC), (2) VR QoL with the Impact of Vision Impairment for Children (IVI-C), and (3) HR QoL with the Pediatric Quality of Life Inventory (PedsQL) version 4.0.
+
+  \textbf{MAIN OUTCOME MEASURES} 
+  
+  Cardiff Visual Ability Questionnaire for Children, IVI-C, and PedsQL scores.
+
+  \begin{flushright}
+    ---Quality of Life and Functional Vision in Children with Glaucoma. \emph{Ophthalmology (2017)}
+  \end{flushright}
+
+  \tcblower
+
+  \noindent \textbf{STEP IDENTIFICATION}
+
+  \vspace*{2pt}
+  {\small\noindent
+  \begin{tblr}{colspec={X[1,c]X[3,l]},cell{even}{1,2} = {azure9}}
+    \toprule
+    \textbf{Step} & \textbf{Sample} \\ 
+    \midrule
+    
+    2S2 & DESIGN: Cross-sectional observational study. \\
+     2S3 & PARTICIPANTS: One hundred nineteen children 2 to 16 years of age (mean age, 9.4 years; standard deviation [SD], 4.56 years) with glaucoma and their parents. \\
+     2S4 & METHODS: Completion of 3 validated instruments for children to assess (1) functional visual ability (FVA) with the Cardiff Visual Ability Questionnaire for Children (CVAQC), (2) VR QoL with the Impact of Vision Impairment for Children (IVI-C), and (3) HR QoL with the Pediatric Quality of Life Inventory (PedsQL) version 4.0. \\
+     2S5 & MAIN OUTCOME MEASURES: Cardiff Visual Ability Questionnaire for Children, IVI-C, and PedsQL scores. \\
+     
+    \bottomrule
+  \end{tblr}
+  }
+
+\end{sample}
+
+\begin{sample}[label={sam:M2_3}]{\heiti}
+  
+  \textbf{MATERIALS AND METHODS} 
+  
+  The institutional review board approved this retrospective study and waived the informed consent requirement. Seventy-four patients with surgically confirmed PNETs and 82 patients with PDACs who underwent gadobutrol-enhanced MR imaging were included. Two radiologists independently evaluated the morphologic characteristics and temporal enhancement patterns of each tumor. Quantitative analysis, including measurement of tumor size, maximal upstream parenchymal thickness (MUPT), contrast-to-noise ratio, and apparent diffusion coefficient values, was performed. Uni-and multivariate logistic regression analyses were performed to identify relevant features to differentiate between PNETs and PDACs.
+
+  \begin{flushright}
+    ---Nonhypervascular Pancreatic Neuroendocrine Tumors: Differential Diagnosis from Pancreatic Ductal Adenocarcinomas at MR Imaging-Retrospective Cross-sectional Study. \emph{Radiology (2017)}
+  \end{flushright}
+
+  \tcblower
+
+  \noindent \textbf{STEP IDENTIFICATION}
+
+  \vspace*{2pt}
+  {\small\noindent
+  \begin{tblr}{colspec={X[1,c]X[3,l]},cell{even}{1,2} = {azure9}}
+    \toprule
+    \textbf{Step} & \textbf{Sample} \\ 
+    \midrule
+    
+     2S1 with 2S2 embedded & The institutional review board approved this retrospective study and waived the informed consent requirement. \\
+     2S3 & Seventy-four patients with surgically confirmed PNETs and 82 patients with PDACs who underwent gadobutrol-enhanced MR imaging were included. \\
+     2S4 & Two radiologists independently evaluated the morphologic characteristics and temporal enhancement patterns of each tumor. \\
+     2S5 & Quantitative analysis, including measurement of tumor size, maximal upstream parenchymal thickness (MUPT), contrast-to-noise ratio, and apparent diffusion coefficient values, was performed. \\
+     2S6 & Uni-and multivariate logistic regression analyses were performed to identify relevant features to differentiate between PNETs and PDACs. \\
+
+    \bottomrule
+  \end{tblr}
+  }
+
+\end{sample}
+
+\section{Language Features in Each Step}
+
+Most steps in M2 are in the past tense, which suggests that the study or research has been conducted. Both active voice and passive voice can be employed in this move, with "we"as the subject in the active voice (e. g. 1) and other nouns indicating the research process as the subject in the passive voice (e. g. 2)
+
+\begin{eg}{}
+  \uuline{We} \uline{conducted} a multicentre, double-blind, randomised, placebo-controlled trial at three hospitals in Australia.
+\end{eg}
+
+\begin{eg}{}
+  A correlation \uuline{analysis} \uline{was used} to examine the relationship between age and weight gain.
+\end{eg}
+
+  \subsection{Step 1(2S1) Reporting on medical ethics review}
+
+    \subsubsection{Step Analysis}
+
+    Medical ethics review has become a necessity in most medical research with human beings or animals as the tested. Despite its growing importance it is seldom reported in medical abstracts.
+
+    \subsubsection{Language Realizations}
+
+    Past tense and passive voice are usually employed in this step, with ``study'' or ``approval'' etc. as the subject. The following is one of the very few 2S1 examples found. Notice the past tense.
+    
+    \begin{eg}
+      This \uuline{study} \uline{was} approved by our institutional review board, and informed consent \uline{was} waived due to its retrospective design.
+    \end{eg}
+
+    \subsubsection{Lexical Chunks}
+
+    \begin{enumerate}
+      \item study was approved by the
+      \begin{eg}
+        This prospective \uline{study was approved by the} institutional ethics committee, and written informed consent was obtained from all participants.
+      \end{eg}
+    \end{enumerate}
+
+  \subsection{Step 2(2S2) Explaining briefly research design}
+
+    \subsubsection{Step Analysis}
+
+    A research design here narrowly refers to the study type. In most abstracts, this optional step usually appears at the beginning of M2.
+
+    \subsubsection{Language Realizations}
+
+    2S2 is usually in simple sentences or noun phrases as a single paragraph (E.g.~\ref{eg:2s2-1}) or embedded with other steps, usually with 2S3 (E.g.~\ref{eg:2s2-2}), occasionally with 2S4 or 2S1. Descriptive words are often employed to modify ``study'', ``trial'', etc. The words ``cohort'', ``retrospective'', ``prospective'', ``observational'', ``cross-sectional'' tend to collocate with ``study''. The words ``randomised'', ``controlled'', ``double-blind'' tend to collocate with ``trial''(E.g.~\ref{eg:2s2-1} \& \ref{eg:2s2-2}).
+
+    \begin{eg}[label={eg:2s2-1}]{}
+      DESIGN: \uline{Retrospective} \uuline{study}.
+    \end{eg}
+
+    \begin{eg}[label={eg:2s2-2}]{}
+      In this \uline{randomised, regimen-controlled, double-blind, phase 2} trial \textbf{(2S2)}, we enrolled adult patients with multiple basal-cell carcinomas, including those with basal-cell nevus syndrome, who had one or more histopathologically confirmed and at least six clinically evident basal-cell carcinomas \textbf{(2S3)}.
+    \end{eg}
+
+    \subsubsection{Lexical Chunks}
+
+    \begin{enumerate}
+      \item a retrospective cohort study (of)
+      \begin{eg}{}
+        This was \uline{a retrospective cohort study of} singleton pregnancies delivered between 24 0/7 and 39 6/7 weeks, using 2005 through 2006 US national linked birth and death certificate data
+      \end{eg}
+      
+      \begin{eg}{}
+        \uline{A retrospective cohort study} was conducted in 2 distinct cohorts of female members of Kaiser Permanente Southern California, which is a large integrated healthcare delivery system.
+      \end{eg}
+
+      \item we conducted a retrospective
+      \begin{eg}{}
+        We conducted a retrospective collaborative study involving centers from 11 countries and 11 US institutions analyzing 102 ASNs by IMS.
+      \end{eg}
+
+      \item a cross-sectional study
+      \begin{eg}{}
+        This was \uline{a cross-sectional study of} 83 patients enrolled in the Morphea in Adults and Children cohort.
+      \end{eg}
+
+      \item a secondary analysis of
+      \begin{eg}{}
+        This was \uline{a secondary analysis of} a prospective cohort study conducted at eight Canadian hospitals.
+      \end{eg}
+    \end{enumerate}
+
+    \begin{task}{\heiti Corpus-based task}
+      What verb tense could be used when a single sentence is used to describe the studyd design?
+    \end{task}
+
+  \subsection{Step 3(2S3) Describing subjects or data and their selection criteria}
+
+    \subsubsection{Step Analysis}
+
+    2S3 is a step presenting the subjects or participants, including the location of the study, the subjects' characteristics, number, and selection criteria, etc. For most abstracts, 2S3 is conventional.
+
+    \subsubsection{Language Realizations}
+
+    This step can be an individual paragraph, in noun phrases (E.g. \ref{eg:2s3-1}) or sentences. When it is in sentences, it could be embedded with the other steps, usually with 2S2 (E.g. \ref{eg:2s3-2}) or 2S4 (E.g. \ref{eg:2s3-3}) in sentences. If the participants or selection criteria are used as the sentence subject, passive voice is preferred over active voice (E.g. \ref{eg:2s3-4}). Simple past tense is always used.
+
+    \begin{eg}[label={eg:2s3-1}]{}
+      PARTICIPANTS: A total of 152 patients (152 eyes) with DME.
+    \end{eg}
+
+    \begin{eg}[label={eg:2s3-2}]{}
+      This was a retrospective, multicenter cross-sectional analysis \textbf{(2S2)} of children (<19 years old) presenting to 16 pediatric EDs (2004--2008) \textbf{(2S3)}.
+    \end{eg}
+
+    \begin{eg}[label={eg:2s3-3}]{}
+      From November 1994 through January 2002, we randomly assigned 731 men with localized prostate cancer \textbf{(2S3)} to radical prostatectomy or observation \textbf{(2S4)}.
+    \end{eg}
+
+    \begin{eg}[label={eg:2s3-4}]{}
+      All Danish \uuline{patients} $\geqslant 18$ years on January 1,2012 with AD diagnosed by a hospital dermatologist \uline{were included}. \uuline{Patients} \uline{were age-and sex-matched} in a l : 4 ratio with general population controls.
+    \end{eg}
+
+    \subsubsection{Lexical Chunks}
+
+    \begin{enumerate}
+      \item were included in the/this
+      \begin{eg}{}
+        All patients who received at least one dose of nivolumab \uline{were included in the} primary and safety analyses.
+      \end{eg}
+        
+      \begin{eg}{}
+        Patients diagnosed from 1995 to 2014 \uline{were included in this} study.
+      \end{eg}
+
+      \item years or older with
+      \begin{eg}{}
+        Eligible patients were aged 18 \uline{years or older with} histologically or cytologically confirmed recurrent stage Illb or stage IV, chemotherapy-naive NSCLC.
+      \end{eg}
+
+      \item data were collected from
+      \begin{eg}{}
+        \uline{Data were collected from} the China Health and Nutrition Survey, a prospective open cohort and an ongoing nationwide health and nutrition survey, consisting of 3 199 apparently healthy Chinese girls aged 6 to 18 years at entry from 1991 to 2011.
+      \end{eg}
+    \end{enumerate}
+
+  \subsection{Step 4(2S4) Describing experimental procedure, such as interventions, examinations, etc.}
+
+    \subsubsection{Step Analysis}
+
+    Experimental procedure here may include interventions, examinations, and so on. 2S4 is usually included in an abstract when the research is experiment-based or when there is an intervention in the research. It is a conventional step in M2.
+
+    \subsubsection{Language Realizations}
+
+    Passive voice is preferred over active voice in this step, as the research subjects or methods are often used as the subject of the sentence. Simple past tense is always used. Time indicators are characteristic of this step.
+
+    \subsubsection{Lexical Chunks}
+
+  \subsection{Step 5(2S5) Describing main outcomes and their measures}
+
+    \subsubsection{Step Analysis}
+
+    The World Health Organization defines an outcome measure as a change in the health of an individual, group of people, or population that is attributable to an intervention or series of interventions. Outcome measures are chosen to assess the impact of the interventions. In a clinical trial, outcome measures may include mortality, cure, clinical worsening, readmission, etc. Sometimes their measurements might also be included in this step.
+
+    \subsubsection{Language Realizations}
+
+    2S5 can be presented in noun phrases (e. g. 1) or in sentences usually of active voice with ``outcomes'', ``outcome measure'', etc. as the sentence subject (e. g. 2). Simple past tense is always used.
+
+    \subsubsection{Lexical Chunks}
+
+  \subsection{Step 6(2S6) Describing data analysis methods}
+
+    \subsubsection{Step Analysis}
+
+    2S6 is included when some specific data extraction and analysis are needed in the abstract. It is usually optional.
+
+    \subsubsection{Language Realizations}
+
+    Sentences in this step are usually presented in passive voice with the data extraction and analysis methods as the sentence subject. Simple past tense is always used.
+
+    \subsubsection{Lexical Chunks}
+
+  \subsection{Step 7(2S7) Reporting on registration information}
+
+    \subsubsection{Step Analysis}
+
+    According to the WHO rules, the clinical trials, especially those prospective ones, should be registered, so some clinical trials will include this step at the end of M2. In spite of its importance, it is seldom seen in abstract writing.
+
+    \subsubsection{Language Realizations}
+
+    The study or trial is usually taken as the subject in this step, so passive voice is used more often. Generally speaking, simple present tense is used much more frequently than simple past tense. Following are two of the few 2S7 examples found.
+
+    \subsubsection{Lexical Chunks}
+
+
 \chapter{}\label{chapter5}
 \chapter{}\label{chapter6}
 
