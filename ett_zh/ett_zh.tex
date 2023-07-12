@@ -49,9 +49,9 @@ attach title to upper,coltitle=black,arc=0mm,top=0mm,boxrule=0pt,beforeafter ski
 \usepackage[]{adforn}
 % \renewcommand{\chaptername}{第 \thechapter{} 章}
 % \newcommand{\exercisename}{Exercice}
-\newenvironment{problemset}[1][\chaptername~\;Exercice]{
+\newenvironment{problemset}[1][本章练习]{
   \begin{center}
-    \phantomsection\addcontentsline{toc}{section}{\texorpdfstring{chapter\;Exercice}{Exercice}}
+    \phantomsection\addcontentsline{toc}{section}{\texorpdfstring{本章练习}{Exercice}}
     % \markboth{#1}{\rightmark}
     \markright{#1}
     \textcolor{black}{\Large\bfseries\adftripleflourishleft~#1~\adftripleflourishright}
@@ -263,7 +263,7 @@ attach title to upper,coltitle=black,arc=0mm,top=0mm,boxrule=0pt,beforeafter ski
 
 {\small
   \begin{longtblr}[
-      caption = {Sub-disciplines and journals in each sub-discipline},
+      caption = {医学子学科及各子学科期刊},
       label = {tab:Sub-disciplines and journals in each sub-discipline},
   ]{
       width = \textwidth,
@@ -310,11 +310,11 @@ attach title to upper,coltitle=black,arc=0mm,top=0mm,boxrule=0pt,beforeafter ski
     在本书中，“语料库任务”旨在提高您基于语料库法探索医学学术论文摘要语言构成的能力。这些任务中的大多数可能需要使用诸如AntConc、WordSmith在内的专业软件。
   \end{note}
 
-  \section{Glossary}
+  \section{词汇表}
 
   {\small
   \begin{longtblr}[
-      caption = {Glossary of Chapter 1},
+      caption = {第一章词汇表},
       label = {tab:Glossary of Chapter 1},
   ]{
       width = \textwidth,
@@ -325,7 +325,7 @@ attach title to upper,coltitle=black,arc=0mm,top=0mm,boxrule=0pt,beforeafter ski
   }
       
   \toprule
-  \textbf{WORDS} & \textbf{MEANING} & \textbf{MEANING OR EXAMPLE}\\
+  \textbf{WORDS} & \textbf{MEANING} & \textbf{MEANING or EXAMPLE}\\
   \midrule
 
   \textbf{excerpt}/\textipa{"eks3:pt}/ & \emph{v.} 摘录；引用  & If a long piece of writing or music is excerpted, short pieces from it are printed or played on their own. \\
@@ -400,7 +400,7 @@ attach title to upper,coltitle=black,arc=0mm,top=0mm,boxrule=0pt,beforeafter ski
 
 大多数医学论文摘要都采用了四步走的方案，第一步（M1）确定研究领域，第二步（M2）描述研究过程，第三步（M3）总结主要成果，第四步（M4）得出结论。这些都是医学研究报告摘要中的常规语步。
 
-在结构化的摘要中，M2、M3和M4可以通过方法(method)、结果(result)和结论(conclusion)的标题轻松识别。虽然有些摘要中没有“方法”的具体标题，但M2被细分为几个语阶，可以清楚地识别。它们可以被标记为 “实验设计(design)”、“环境设置(setting)”、“参与者(participants)”、“干预(interventions)”、“主要观察指标(main outcome measures)”，等等。
+在结构化的摘要中，M2、M3和M4可以通过方法(method)、结果(result)和结论(conclusion)的标题轻松识别。虽然有些摘要中没有“方法”的具体标题，但M2被细分为几个语阶，可以清楚地识别。它们可以被标记为 “实验设计(design)”、“实验环境设置(setting)”、“参与者(participants)”、“干预(interventions)”、“主要观察指标(main outcome measures)”，等等。
 
 当涉及到M1时，标有“目标(objective)”或“背景(background)”或两者皆有的章节都属于M1部分的内容。在一些结构化的摘要中，“背景” 和“目标”都被标示出来，有些只有“目标”，而有些只有“背景”。那些标有“目标”或“背景”的部分，在实际内容上通常由这两个部分组成。此外，在实践过程中，目标和背景密切相关，通常被视为一个整体，以实现确定研究领域这一特定交流目的。
 
@@ -590,11 +590,11 @@ Move4 & M4 & Drawing conclusions &  \\
   
 \end{sample}
 
-\section{Glossary}
+\section{词汇表}
 
 {\small
 \begin{longtblr}[
-    caption = {Glossary of Chapter 2},
+    caption = {第二章词汇表},
     label = {tab:Glossary of Chapter 2},
     note{a} = {英文论文中指代当前文献中的差距、问题或缺陷。即现有研究尚未解决的部分。},
 ]{
@@ -606,7 +606,7 @@ Move4 & M4 & Drawing conclusions &  \\
 }
     
 \toprule
-\textbf{WORDS} & \textbf{MEANING} & \textbf{MEANING OR EXAMPLE}\\
+\textbf{WORDS} & \textbf{MEANING} & \textbf{MEANING or EXAMPLE}\\
 \midrule
 
 \textbf{conventional}/\textipa{k@n"venS@nl}/ & \emph{adj.} 传统的；常规的 & a conventional method, product, practice, etc. has been used for a long time and is considered the usual type \\
@@ -1011,7 +1011,7 @@ M1通常包括三个语阶，每个语阶都有明确的交流目的。
     \end{eg}
 
     \begin{task}[label={myautocounter}]{\heiti 语料库任务}
-      What kind of verb is often used in present perfect tense in M1?
+      在M1中，哪种动词常用现在完成时？
     \end{task}
 
     在这一语阶，主动语态和被动语态都可以使用。
@@ -1107,7 +1107,7 @@ M1通常包括三个语阶，每个语阶都有明确的交流目的。
 
     \subsubsection{语言实现}
 
-    在大多数情况下，动词的不定式(to-infinitive)被用来表达这一语阶的目的。它既可以放在句子的开头，也可以放在中间，从下面的例子中可以看出。
+    在大多数情况下，动词的不定式(to-infinitive)被用来表达这一语阶的目的。它既可以放在句子的开头，也可以放在中间，这一特点可以从下面的例子看出。
 
     \begin{eg}{}
       \uline{To achieve} the efficient usage of contrast material (CM) in high-pitch CT aortography, an appropriate duration of the CM injection is crucial.
@@ -1208,9 +1208,9 @@ M1通常包括三个语阶，每个语阶都有明确的交流目的。
       \end{eg}
     \end{enumerate}
 
-\section{Sample Reading}
+\section{材料阅读}
 
-Three samples of M1 are presented here, followed by a detailed analysis on the language features of the steps included.
+这一小节提供了3段M1材料，并对其中语阶的语言特点进行了详细分析。
 
 \begin{sample}[label={myautocounter}]{\heiti}
   
@@ -1326,11 +1326,11 @@ Three samples of M1 are presented here, followed by a detailed analysis on the l
 
 \end{sample}
 
-\section{Glossary}
+\section{词汇表}
 
 {\small
 \begin{longtblr}[
-    caption = {Glossary of Chapter 3},
+    caption = {第三章词汇表},
     label = {tab:Glossary of Chapter 3},
 ]{
     width = \textwidth,
@@ -1341,7 +1341,7 @@ Three samples of M1 are presented here, followed by a detailed analysis on the l
 }
     
 \toprule
-\textbf{WORDS} & \textbf{MEANING} & \textbf{MEANING OR EXAMPLE}\\
+\textbf{WORDS} & \textbf{MEANING} & \textbf{MEANING or EXAMPLE}\\
 \midrule
 
 \textbf{chunk}/\textipa{tS2Nk}/ & \emph{n.} 组块；区块；数据块 & a considerable amount \\
@@ -1460,7 +1460,7 @@ Three samples of M1 are presented here, followed by a detailed analysis on the l
 
 \chapter{语步二}\label{chapter4}
 
-语步2（M2）描述了研究过程。在这一语步中，作者陈述了研究问题的方式。这可能包括研究对象和遵循的方法，以及其他事项。在4-5段的摘要中，M2通常是一个段落；在5段以上的摘要中，M2被分成若干段落，每段前面有一个标题，这样更清晰，也更具体。
+语步2（M2）描述了研究过程。在这一语步中，作者陈述了研究问题的方式。这可能包括研究对象和遵循的方法，以及其他事项。在$4\sim 5$段的摘要中，M2通常是一个段落；在5段以上的摘要中，M2被分成若干段落，每段前面有一个标题，这样更清晰，也更具体。
 
 \section{M2中的语阶}
 
@@ -1547,9 +1547,9 @@ Three samples of M1 are presented here, followed by a detailed analysis on the l
     \midrule
     
     2S2 & DESIGN: Cross-sectional observational study. \\
-     2S3 & PARTICIPANTS: One hundred nineteen children 2 to 16 years of age (mean age, 9.4 years; standard deviation [SD], 4.56 years) with glaucoma and their parents. \\
-     2S4 & METHODS: Completion of 3 validated instruments for children to assess (1) functional visual ability (FVA) with the Cardiff Visual Ability Questionnaire for Children (CVAQC), (2) VR QoL with the Impact of Vision Impairment for Children (IVI-C), and (3) HR QoL with the Pediatric Quality of Life Inventory (PedsQL) version 4.0. \\
-     2S5 & MAIN OUTCOME MEASURES: Cardiff Visual Ability Questionnaire for Children, IVI-C, and PedsQL scores. \\
+    2S3 & PARTICIPANTS: One hundred nineteen children 2 to 16 years of age (mean age, 9.4 years; standard deviation [SD], 4.56 years) with glaucoma and their parents. \\
+    2S4 & METHODS: Completion of 3 validated instruments for children to assess (1) functional visual ability (FVA) with the Cardiff Visual Ability Questionnaire for Children (CVAQC), (2) VR QoL with the Impact of Vision Impairment for Children (IVI-C), and (3) HR QoL with the Pediatric Quality of Life Inventory (PedsQL) version 4.0. \\
+    2S5 & MAIN OUTCOME MEASURES: Cardiff Visual Ability Questionnaire for Children, IVI-C, and PedsQL scores. \\
      
     \bottomrule
   \end{tblr}
@@ -1592,7 +1592,7 @@ Three samples of M1 are presented here, followed by a detailed analysis on the l
 
 \section{每个语阶的语言特征}
 
-Most steps in M2 are in the past tense, which suggests that the study or research has been conducted. Both active voice and passive voice can be employed in this move, with "we"as the subject in the active voice (E.g.~\ref{eg:M2-1}) and other nouns indicating the research process as the subject in the passive voice (E.g.~\ref{eg:M2-2})
+M2中的大多数语阶都是过去式，这表明学习或研究已经进行了。主动语态和被动语态都可以在这一语步中使用，“we”作为主动语态的主语（如E.g.~\ref{eg:M2-1}），其他表示研究过程的名词作为被动语态的主语（如E.g.~\ref{eg:M2-2}）。
 
 \begin{eg}[label={eg:M2-1}]{}
   \uuline{We} \uline{conducted} a multicentre, double-blind, randomised, placebo-controlled trial at three hospitals in Australia.
@@ -1602,15 +1602,15 @@ Most steps in M2 are in the past tense, which suggests that the study or researc
   A correlation \uuline{analysis} \uline{was used} to examine the relationship between age and weight gain.
 \end{eg}
 
-  \subsection{Step 1(2S1) Reporting on medical ethics review}
+  \subsection{语阶1(2S1) 报告医学伦理审查情况}
 
     \subsubsection{语阶分析}
 
-    Medical ethics review has become a necessity in most medical research with human beings or animals as the tested. Despite its growing importance it is seldom reported in medical abstracts.
+    医学伦理审查已成为大多数以人类或动物为试验对象的医学研究中的必要条件。尽管它越来越重要，但在医学摘要中却很少提及。
 
     \subsubsection{语言实现}
 
-    Past tense and passive voice are usually employed in this step, with ``study'' or ``approval'' etc. as the subject. The following is one of the very few 2S1 examples found. Notice the past tense.
+    这一语阶通常采用过去式和被动语态，以“study”或“approval”等作为主语。下面是发现的极少数2S1的例子之一。请注意是过去式。
     
     \begin{eg}
       This \uuline{study} \uline{was} approved by our institutional review board, and informed consent \uline{was} waived due to its retrospective design.
@@ -1625,15 +1625,15 @@ Most steps in M2 are in the past tense, which suggests that the study or researc
       \end{eg}
     \end{enumerate}
 
-  \subsection{Step 2(2S2) Explaining briefly research design}
+  \subsection{语阶 2(2S2) 简要解释研究设计}
 
     \subsubsection{语阶分析}
 
-    A research design here narrowly refers to the study type. In most abstracts, this optional step usually appears at the beginning of M2.
+    这里的研究设计狭义上指的是研究类型。在大多数摘要中，这一可选语阶通常出现在M2的开头。
 
     \subsubsection{语言实现}
 
-    2S2 is usually in simple sentences or noun phrases as a single paragraph (E.g.~\ref{eg:2s2-1}) or embedded with other steps, usually with 2S3 (E.g.~\ref{eg:2s2-2}), occasionally with 2S4 or 2S1. Descriptive words are often employed to modify ``study'', ``trial'', etc. The words ``cohort'', ``retrospective'', ``prospective'', ``observational'', ``cross-sectional'' tend to collocate with ``study''. The words ``randomised'', ``controlled'', ``double-blind'' tend to collocate with ``trial''(E.g.~\ref{eg:2s2-1} \& \ref{eg:2s2-2}).
+    2S2通常在简单的句子或名词短语中作为一个单独的段落（如E.g.~\ref{eg:2s2-1}）或与其他语阶嵌入，通常与2S3（如E.g.~\ref{eg:2s2-2}），偶尔与2S4或2S1。描述性词语经常被用来修饰“study”、“trial”等。“队列(cohort)”、“回顾性(retrospective)”、“前瞻性(prospective)”、“观察性(observational)”、“横断面(cross-sectional)”等词往往与“study”搭配在一起。而“随机(randomised)”、“对照(controlled)”、“双盲(double-blind)”等词则倾向于与“trial”搭配（例如，E.g.~\ref{eg:2s2-1} \& \ref{eg:2s2-2}）。
 
     \begin{eg}[label={eg:2s2-1}]{}
       DESIGN: \uline{Retrospective} \uuline{study}.
@@ -1672,18 +1672,18 @@ Most steps in M2 are in the past tense, which suggests that the study or researc
     \end{enumerate}
 
     \begin{task}{\heiti 语料库任务}
-      What verb tense could be used when a single sentence is used to describe the studyd design?
+      当需要用一句话描述研究设计时，可以使用何种动词时态？
     \end{task}
 
-  \subsection{Step 3(2S3) Describing subjects or data and their selection criteria}
+  \subsection{语阶3(2S3) 描述受试者或数据及其选择标准}
 
     \subsubsection{语阶分析}
 
-    2S3 is a step presenting the subjects or participants, including the location of the study, the subjects' characteristics, number, and selection criteria, etc. For most abstracts, 2S3 is conventional.
+    2S3是介绍受试者或参与者的语阶，包括研究的地点、受试者的特征、数量和选择标准等。对于大多数摘要来说，2S3是常规的。
 
     \subsubsection{语言实现}
 
-    This step can be an individual paragraph, in noun phrases (E.g. \ref{eg:2s3-1}) or sentences. When it is in sentences, it could be embedded with the other steps, usually with 2S2 (E.g. \ref{eg:2s3-2}) or 2S4 (E.g. \ref{eg:2s3-3}) in sentences. If the participants or selection criteria are used as the sentence subject, passive voice is preferred over active voice (E.g. \ref{eg:2s3-4}). Simple past tense is always used.
+    这个语阶可以是一个单独的段落，在名词短语（如E.g. \ref{eg:2s3-1}）或句子中。当它在句子中时，它可以与其他语阶一起嵌入，通常与2S2（如E.g. \ref{eg:2s3-2}）或2S4（如E.g. \ref{eg:2s3-3}）在句子中。如果参与者或选择标准被用作句子主语，被动语态优于主动语态（如E.g. \ref{eg:2s3-4}）。总是使用一般过去时。
 
     \begin{eg}[label={eg:2s3-1}]{}
       PARTICIPANTS: A total of 152 patients (152 eyes) with DME.
@@ -1724,15 +1724,15 @@ Most steps in M2 are in the past tense, which suggests that the study or researc
       \end{eg}
     \end{enumerate}
 
-  \subsection{Step 4(2S4) Describing experimental procedure, such as interventions, examinations, etc.}
+  \subsection{语阶4(2S4) 描述实验程序，如干预措施、检查等。}
 
     \subsubsection{语阶分析}
 
-    Experimental procedure here may include interventions, examinations, and so on. 2S4 is usually included in an abstract when the research is experiment-based or when there is an intervention in the research. It is a conventional step in M2.
+    这里的实验程序可能包括干预、检查等。当研究以实验为基础或研究中有干预措施时，2S4通常包括在摘要中。它是M2的常规语阶。
 
     \subsubsection{语言实现}
 
-    Passive voice is preferred over active voice in this step, as the research subjects or methods are often used as the subject of the sentence. Simple past tense is always used. Time indicators are characteristic of this step.
+    在这一语阶中，被动语态比主动语态更受欢迎，因为研究对象或方法经常被用作句子的主语。总是使用一般过去式。时间指标是本语阶的特点。
 
     \begin{eg}{}
       The asthma \uuline{intervention} \uline{was tailored} to the participant's allergen sensitivity and exposure, and it comprised 4 visits \uline{over the course of 1 year}.
@@ -1787,15 +1787,15 @@ Most steps in M2 are in the past tense, which suggests that the study or researc
       \end{eg}
     \end{enumerate}
 
-  \subsection{Step 5(2S5) Describing main outcomes and their measures}
+  \subsection{语阶5(2S5) 描述主要结果及其观察指标}
 
     \subsubsection{语阶分析}
 
-    The World Health Organization defines an outcome measure as a change in the health of an individual, group of people, or population that is attributable to an intervention or series of interventions. Outcome measures are chosen to assess the impact of the interventions. In a clinical trial, outcome measures may include mortality, cure, clinical worsening, readmission, etc. Sometimes their measurements might also be included in this step.
+    世界卫生组织将观察指标定义为可归因于某项干预措施或一系列干预措施的个人、群体或人口的健康变化。选择观察指标是为了评估干预措施的影响。在临床试验中，观察指标可能包括死亡率(mortality)、治愈率(cure)、临床恶化(clinical worsening)、再入院率(readmission)等。有时研究者指定的其他指标也可能包括在这个语阶中。
 
     \subsubsection{语言实现}
 
-    2S5 can be presented in noun phrases (E.g.~\ref{eg:2s5-1}) or in sentences usually of active voice with ``outcomes'', ``outcome measure'', etc. as the sentence subject (E.g.~\ref{eg:2s5-2}). Simple past tense is always used.
+    2S5可以用名词短语表述（如E.g.~\ref{eg:2s5-1}），也可以用通常是主动语态的句子，以“outcomes”、“outcome measure”等作为句子主语（如E.g.~\ref{eg:2s5-2}）。总是使用一般过去时。
 
     \begin{eg}[label={eg:2s5-1}]{}
       MAIN OUTCOME MEASURES: Cardiff Visual Ability Questionnaire for Children, IVI-C, and PedsQL scores.
@@ -1856,15 +1856,15 @@ Most steps in M2 are in the past tense, which suggests that the study or researc
       \end{eg}
     \end{enumerate}
 
-  \subsection{Step 6(2S6) Describing data analysis methods}
+  \subsection{语阶6(2S6) 描述数据分析方法}
 
     \subsubsection{语阶分析}
 
-    2S6 is included when some specific data extraction and analysis are needed in the abstract. It is usually optional.
+    当摘要中需要一些特定的数据提取和分析时，2S6才会被包括在内。它通常是可选的。
 
     \subsubsection{语言实现}
 
-    Sentences in this step are usually presented in passive voice with the data extraction and analysis methods as the sentence subject. Simple past tense is always used.
+    这一语阶的句子通常以被动语态呈现，数据提取和分析方法作为句子的主语。总是使用一般过去式。
 
     \begin{eg}{}
       \uuline{Multivariable logistic regression analysis} \uline{was used} to estimate the risks of these complications among obese pregnancies compared with normal-weight pregnancies.    
@@ -1887,15 +1887,15 @@ Most steps in M2 are in the past tense, which suggests that the study or researc
       \end{eg}
     \end{enumerate}
 
-  \subsection{Step 7(2S7) Reporting on registration information}
+  \subsection{语阶7(2S7) 报告注册信息}
 
     \subsubsection{语阶分析}
 
-    According to the WHO rules, the clinical trials, especially those prospective ones, should be registered, so some clinical trials will include this step at the end of M2. In spite of its importance, it is seldom seen in abstract writing.
+    根据WHO的规定，临床试验，特别是那些前瞻性的临床试验，应该进行登记，所以一些临床试验在M2的最后会包括这一语阶。尽管它很重要，但在摘要写作中却很少见到。
 
     \subsubsection{语言实现}
 
-    The study or trial is usually taken as the subject in this step, so passive voice is used more often. Generally speaking, simple present tense is used much more frequently than simple past tense. Following are two of the few 2S7 examples found.
+    在这一语阶中，研究或试验通常被当作主语，所以被动语态的使用更为频繁。一般来说，一般现在时比一般过去时的使用频率高得多。以下是发现的少数2S7例子中的两个。
 
     \begin{eg}{}
       This trial is registered with ClinicalTrials. gov, number NCTO1815840, and the study is ongoing.
@@ -1919,12 +1919,12 @@ Most steps in M2 are in the past tense, which suggests that the study or researc
     \end{enumerate}
 
     \begin{task}{语料库任务}
-      Which word can collocate with ``clinical'', ``experiment'', ``research'', ``study'' or ``trial'' in your corpus? List them in frequency order.
+      在您的语料库中，哪些词可以与“clinical”、“experiment”、“research”、“study”或“trial”搭配？请按出现频率列出。
     \end{task}
 
-\section{Sample Reading}
+\section{材料阅读}
 
-Three samples of M2 are presented here, followed by a detailed analysis on the language features of the steps included.
+这一节提供了3段M2材料，并对其中语阶的语言特点进行了详细分析。
 
 \begin{sample}[label={myautocounter}]{\heiti}
   
@@ -2049,11 +2049,11 @@ Three samples of M2 are presented here, followed by a detailed analysis on the l
 
 \end{sample}
 
-\section{Glossary}
+\section{词汇表}
 
 {\small
 \begin{longtblr}[
-    caption = {Glossary of Chapter 4},
+    caption = {第四章词汇表},
     label = {tab:Glossary of Chapter 4},
     % note{a} = {英文论文中指代当前文献中的差距、问题或缺陷。即现有研究尚未解决的部分。},
 ]{
@@ -2065,7 +2065,7 @@ Three samples of M2 are presented here, followed by a detailed analysis on the l
 }
     
 \toprule
-\textbf{WORDS} & \textbf{MEANING} & \textbf{MEANING OR EXAMPLE}\\
+\textbf{WORDS} & \textbf{MEANING} & \textbf{MEANING or EXAMPLE}\\
 \midrule
 
 {\textbf{collocate}\\/\textipa{"k6l@""keIt}/} & \emph{v.} 【语】词语的组合；排列 & to group or place together in some system or order \\
@@ -2082,7 +2082,7 @@ Three samples of M2 are presented here, followed by a detailed analysis on the l
 }
 
 \begin{problemset}
-  \item \textbf{With the "Steps in M2"offered, try to identify the steps in the following 2 examples of M2 and write down the corresponding numbers in the blanks in front of each part.}
+  \item \textbf{With the ``Steps in M2'' offered, try to identify the steps in the following 2 examples of M2 and write down the corresponding numbers in the blanks in front of each part.}
   
   \hspace*{2em}Steps in M2:
 
@@ -2141,21 +2141,21 @@ Three samples of M2 are presented here, followed by a detailed analysis on the l
 
 
 
-\chapter{Move Three}\label{chapter5}
+\chapter{语步三}\label{chapter5}
 
-Move Three (M3) is the third part of an abstract. The communicative purpose of this part is to summarize the findings or results of the study. It is the longest part in an abstract. However, M3 is not structurally hierarchical, which is different from the other three moves in an abstract.
+语步3（M3）是摘要的第三部分。这一部分的交流目的是总结研究的结果或成果。它是摘要中最长的部分。不过，M3在结构上并不具有层级性，这与摘要中的其他三个语步不同。
 
-\section{Steps in M3}
+\section{M3中的语阶}
 
-The steps discovered in M3 include:
+M3中发现的语阶包括：
 
-3S1 Providing information on valid samples
+3S1 提供有效样本的信息
 
-3S2 Illustrating overall observation or main results 
+3S2 说明整体观察或主要结果 
 
-These two steps follow the order listed above, with rare exceptions, to fulfill the authors' communicative purpose (Sample 1). Of these two steps, 3S1 is optional, and 3S2 is conventional (Sample 2). It is difficult to further stratify 3S2 in spite of its length.
+除了极少数个例外，这两个语阶均按照上面列出的顺序书写，以实现作者的交流目的（Sample~\ref{sam:M3-1}）。在这两个语阶中，3S1是可选的，而3S2是常规的（Sample~\ref{sam:M3-2}）。尽管3S2很长，但很难对其进一步分层。
 
-\begin{sample}[label={myautocounter}]{\heiti}
+\begin{sample}[label={sam:M3-1}]{\heiti}
 
   \textbf{RESULTS}
 
@@ -2187,7 +2187,7 @@ These two steps follow the order listed above, with rare exceptions, to fulfill 
 
 \end{sample}
 
-\begin{sample}[label={myautocounter}]{\heiti}
+\begin{sample}[label={sam:M3-2}]{\heiti}
   
   \textbf{RESULTS }
   
@@ -2219,16 +2219,16 @@ These two steps follow the order listed above, with rare exceptions, to fulfill 
 
 \section{每个语阶的语言特征}
 
-Similar to most steps in M2, M3 uses past tense, and both active voice and passive voice.
+与M2中的大多数语阶类似，M3使用过去式，并且同时使用主动语态和被动语态。
 
-  \subsection{Step 1(3S1) Providing information on valid samples}
+  \subsection{语阶1(3S1) 提供有效样本的信息}
     \subsubsection{语阶分析}
 
-    In an experiment-based study, extra information about the valid sample(s) may be supplemented, such as the number, age and grouping, etc.
+    在基于实验的研究中，可以补充关于有效样本的额外信息，如数量、年龄和分组等。
 
     \subsubsection{语言实现}
 
-    Sometimes, 3S1 is in past tense and passive voice with the sample(s) as the sentence subject. Sometimes it is in active voice.
+    有时，3S1使用过去式和被动语态，样本作为句子主语。有时，它则采用主动语态。
 
     \begin{eg}{}
       Of 1072 neonates screened, 523 \uline{were assigned} to hydrocortisone (n= 256) or placebo (n=267) and 406 \uline{survived} to 2 years of age.  
@@ -2270,10 +2270,10 @@ Similar to most steps in M2, M3 uses past tense, and both active voice and passi
       \end{eg}
     \end{enumerate}
 
-  \subsection{Step 2(3S2) Illustrating overall observation or main results}
+  \subsection{语阶2(3S2) 说明整体观察或主要结果}
     \subsubsection{语阶分析}
 
-    As an important step in M3, this step states the main findings or results of the study. Generally speaking, the overview of the findings comes before the details, as we can see from the example below.
+    作为M3的一个重要语阶，3S2要阐述研究的主要发现或结果。一般来说，研究结果的概述会放在在细节之前，我们可以从下面的例子中看到。
 
     \begin{eg}{}
       \par 
@@ -2295,11 +2295,11 @@ Similar to most steps in M2, M3 uses past tense, and both active voice and passi
       }
     \end{eg}
 
-    This example first answers the research aim and research question ``whether parecoxib-supplemented IV morphine analgesia could decrease the incidence of delirium in elderly patients after total hip or knee replacement surgery'' in 1S3a, and then states the significance of the findings from ``the severity of pain'', ``cumulative consumptions'' and ``postoperative complications''.
+    本例首先回答了1S3a中的研究目的和研究问题“帕瑞昔布辅助静脉吗啡镇痛能否降低老年患者全髋关节或膝关节置换手术后谵妄的发生率”，然后从“疼痛的严重程度”、“累计消耗量”和“术后并发症”这几个方面阐述研究结果的意义。
 
     \subsubsection{语言实现}
 
-    Past tense is the most obvious language feature of 3S2. Besides, passive voice is preferred over active voice, so as to indicate the objectivity of the research findings. It is found that the verbs used to show the results are also signals of this step, such as ``found'', ``observed'' and so on. Still, there exist cases in active voice. For example, the structure ``analysis showed'' may be adopted to create the leadership of the research analysis with a neutral and scientific-sounding tone.
+    过去式是3S2最明显的语言特征。此外，被动语态比主动语态更受青睐，这样可以表明研究结果的客观性。我们发现，用于显示结果的动词也是这语阶的信号词，如“found”、“observed”等。不过，还是有使用主动语态的情况存在。例如，可以采用“analysis showed”的结构，以中立的、听起来很科学的语气提升研究分析的可信度。
 
     \begin{eg}{}
       No change in measures of daily PA was observed at 4-wk compared with baseline($P>0.05$)   
@@ -2309,9 +2309,9 @@ Similar to most steps in M2, M3 uses past tense, and both active voice and passi
       Multivariated \uuline{analysis} \uline{showed} that nodules less than 1. 5 cm, ultrasonographic findings suggestive of malignancy and more than 2 results of atypia from repeated FNAs were significant risk factors for malignancy ($P<0.001$).  
     \end{eg}
 
-    Correlation and inter-group differences etc. are often involved in medical studies, so relational signals establish the relations between elements, which include resultative signals (e.g. these findings suggest that), contrastive signals (e.g. no significant difference in) and inferential signals (e.g. was found to be).
+    医学研究中经常涉及相关性和组间差异等，因此关系性信号词构建了各要素之间的联系，其中包括结果性信号词 (e.g. \emph{these findings suggest that})、对比性信号词(e.g. \emph{no significant difference in}) 和推断性信号词 (e. g. \emph{was found to be})。
 
-    Besides, adjectives indicating epistemic modality, such as ``likely'', which conveys a degree of likelihood, are also characteristic of this step. They show impersonal epistemic stance to express degrees of possibilities in the research results.
+    此外，表示认识论模式的形容词，如“likely”，表达了可能性的程度，也是该语阶的特点。它们显示了非个人的认识论立场，以表达研究结果中的可能性程度。
 
     \begin{eg}{}
       Recidivists were more \uline{likely} to be male (P<0.0001), Black (P<0.0001), have a blood alcohol content above 80 mg/dL (P<0.0001) compared with nonrecidivists.  
@@ -2435,9 +2435,9 @@ Similar to most steps in M2, M3 uses past tense, and both active voice and passi
       \end{eg}
     \end{enumerate}
 
-\section{Simple Reading}
+\section{材料阅读}
 
-Two samples of M3 are presented here, followed by a detailed analysis on the language features of the steps included.
+这一小节提供了2段M3材料，并对其中语阶的语言特点进行了详细分析。
 
 \begin{sample}[label={myautocounter}]{\heiti}
   
@@ -2470,7 +2470,7 @@ Two samples of M3 are presented here, followed by a detailed analysis on the lan
 
   \noindent \textbf{ANALYSIS}
 
-  This is an M3 sample with two steps in past tense. The first step 3S1 offers extra information about the valid samples, that is, 90\% of those with FMS who met the inclusion criteria. Passive voice is employed in this step with ``60 individuals'' as the subject. The second step 3S2 contains the major findings beginning with an overview, that is, ``acceptability of the intervention was high and there were no adverse events.'' More data of the outcome are offered in the following part, with some signals and lexical chunks commonly seen in 3S2, such as ``compared to'', ``in the control group'', ``was found to be'', ``a suitable primary outcome measure'', and ``mean difference'', etc. Both active voice (e.g. "72\% of the intervention group rated their symptoms as$\dots$") and passive voice (e.g. "the SF36 Physical function was found to be$\dots$") are used.
+  This is an M3 sample with two steps in past tense. The first step 3S1 offers extra information about the valid samples, that is, 90\% of those with FMS who met the inclusion criteria. Passive voice is employed in this step with ``60 individuals'' as the subject. The second step 3S2 contains the major findings beginning with an overview, that is, ``acceptability of the intervention was high and there were no adverse events.'' More data of the outcome are offered in the following part, with some signals and lexical chunks commonly seen in 3S2, such as ``compared to'', ``in the control group'', ``was found to be'', ``a suitable primary outcome measure'', and ``mean difference'', etc. Both active voice (e.g. ``72\% of the intervention group rated their symptoms as$\dots$'') and passive voice (e.g. ``the SF36 Physical function was found to be$\dots$'') are used.
 
 \end{sample}
 
@@ -2508,13 +2508,12 @@ Two samples of M3 are presented here, followed by a detailed analysis on the lan
   
 \end{sample}
 
-\section{Glossary}
+\section{词汇表}
 
 {\small
 \begin{longtblr}[
-    caption = {Glossary of Chapter 5},
+    caption = {第五章词汇表},
     label = {tab:Glossary of Chapter 5},
-    % note{a} = {英文论文中指代当前文献中的差距、问题或缺陷。即现有研究尚未解决的部分。},
 ]{
     width = \textwidth,
     colspec = {X[1,l,h]  X[1,l,h]  X[3,l,h]},
@@ -2524,7 +2523,7 @@ Two samples of M3 are presented here, followed by a detailed analysis on the lan
 }
     
 \toprule
-\textbf{WORDS} & \textbf{MEANING} & \textbf{MEANING OR EXAMPLE}\\
+\textbf{WORDS} & \textbf{MEANING} & \textbf{MEANING or EXAMPLE}\\
 \midrule
 
 {\textbf{adverse}\\/\textipa{\ae d"v3rs}/} & \emph{adj.} 不利的；有害的；反面的 & negative and unpleasant; not likely to produce a good result \\
@@ -2572,21 +2571,21 @@ Two samples of M3 are presented here, followed by a detailed analysis on the lan
   \end{enumerate}
 \end{problemset}
 
-\chapter{Move Four}\label{chapter6}
+\chapter{语步四}\label{chapter6}
 
-Move Four (M4) is the last move in the abstract for medical academic paper, where the pivotal results may be highlighted and explained, the significance of the study indicated and recommendations given. Suggestions may also be made for future work or follow-up research. In a hypothesis-driven study, it also needs to be stated clearly in this move whether the hypothesis is supported by the results or not.
+语步4（M4）是医学学术论文摘要的最后一步，在这里可以强调和解释关键性的结果，指出研究的意义并给出建议。也可以对未来的工作或后续研究提出建议。在以假设为导向的研究中，也需要在这一语步中明确说明假设是否得到了结果的支持。
 
-\section{Steps in M4}
+\section{M4中的语阶}
 
-M4 involves four steps with a relatively fixed order.
+M4涉及四个语阶，顺序相对固定。
 
-4S1 Reiterating pivotal results
+4S1 重申关键性的结果
 
-4S2 Indicating limitations
+4S2 指出局限性
 
-4S3 Stating the significance of the results
+4S3 说明结果的重要性
 
-4S4 Predicting future studies
+4S4 预测未来的研究
 
 \begin{sample}[label={myautocounter}]{\heiti}
   
@@ -2711,13 +2710,13 @@ M4 involves four steps with a relatively fixed order.
   
 \end{sample}
 
-From the samples listed above it could be observed that 4S3, in many cases, is a conventional step in M4, while other steps are optional. By analyzing the major findings, M4 points out the significance or implications of the research and draws a conclusion to it.
+从上面列出的样本可以看出，在许多情况下，4S3是M4的常规语阶，而其他语阶是可选的。通过分析研究的主要发现，M4指出了研究的意义或影响，并得出了结论。
 
 \section{每个语阶的语言特征}
-  \subsection{Step 1(4S1) Reiterating pivotal results}
+  \subsection{语阶1(4S1) 重申关键性的结果}
     \subsubsection{语阶分析}
 
-    Usually more than one result is achieved by the research, as presented in M3, but only the most pivotal ones are summarized and restated in this step.
+    通常情况下，正如M3中罗列的那样，研究取得的结果往往不止一个，但在这一语阶中只总结和重申最关键的结果。
 
     \begin{eg}{}
       \par
@@ -2756,7 +2755,7 @@ From the samples listed above it could be observed that 4S3, in many cases, is a
 
     \subsubsection{语言实现}
 
-    As in 3S2, simple past tense is usually adopted here to present the findings of the study, which is locally true.
+    同3S2一样，这里通常采用一般过去时来呈现研究结果，表明这在局部是正确的。
 
     \begin{eg}{}
       Conclusions and Relevance Individuals with ADHD \uline{had} higher scores on the higher education entrance tests during periods they were taking ADHD medication vs nonmedicated periods.
@@ -2779,10 +2778,10 @@ From the samples listed above it could be observed that 4S3, in many cases, is a
       \end{eg}
     \end{enumerate}
 
-  \subsection{Step 2(4S2) Indicating limitations}
+  \subsection{语阶2(4S2) 指出局限性}
     \subsubsection{语阶分析}
 
-    Though often listed in the research articles to add credibility, this step is seldom seen in abstracts. Major limitations might include the scope of the research; the ages, races or genders of participants; unknown factors, such as existing medical conditions; and researcher bias.
+    虽然这一语阶经常被列在研究文章中以增加可信度，但在摘要中却很少见到。主要的局限性可能包括研究的范围；参加者的年龄、种族或性别；未知因素，例如现有的医疗条件；还有研究者的偏见。
 
     \begin{eg}{}
       Limitations Observational studies do not establish cause and effect.
@@ -2790,7 +2789,7 @@ From the samples listed above it could be observed that 4S3, in many cases, is a
 
     \subsubsection{语言实现}
 
-    Words indicating a contrast or negative meanings such as ``not'' or ``lack'' are often seen as the signals of this step.
+    表示对比或否定意义的单词，如“not”或“lack”，通常被视为这一语阶的信号词。
 
     \begin{eg}{}
       In this trial, we provide results for 3 years of treatment, with the limitation that withdrawn individuals were \uline{not} followed up after discontinuation.   
@@ -2800,10 +2799,10 @@ From the samples listed above it could be observed that 4S3, in many cases, is a
       A major limitation of this study is the \uline{lack} of histopathologic proof in most patients.     
     \end{eg}
 
-  \subsection{Step 3(4S3) Stating the significance of the results}
+  \subsection{语阶3(4S3) 说明结果的重要性}
     \subsubsection{语阶分析}
 
-    This is an essential step in M4, providing the readers with the impact that the study might have on future ones or in the relevant field, giving recommendations about possible applications of the findings, stating whether the driven hypotheses are proved or denied by the results, comparing the results with those of the previous studies, or indicating the breakthroughs made by this study.
+    这是M4中必不可少的一步，向读者提供研究可能对未来或相关领域的影响，对研究结果的可能应用提出建议，说明初始假设是否被结果证明或否定，将结果与以往的研究结果进行比较，或表明本研究取得的突破。
 
     \begin{eg}{}
       These findings suggest that ADHD medications may help ameliorate educationally relevant outcomes in individuals with ADHD.
@@ -2811,21 +2810,22 @@ From the samples listed above it could be observed that 4S3, in many cases, is a
 
     \subsubsection{语言实现}
 
-    Simple past and simple present tense can both be employed in this step, the latter being more frequently used, due to which the conclusion would seem more universally true.
-    
-    The word ``suggest'' which is commonly seen in this step suggests that the authors are interpreting the results of the research.
+    一般过去时和一般现在时都可以在这一语阶中使用，后者使用得更频繁，由此显得结论似乎更具普适性。
+
+    在这一步中经常看到的“suggest”一词表明作者正在解释研究结果。
+
 
     \begin{eg}{}
       CONCLUSIONS: These results supported the hypothesis and \uline{suggest} that DSW is an effective exercise intervention for elderly obese women to improve their health and fitness.
     \end{eg}
     
-    The chunk ``this is the first'' is often used in this step to express affirmation of the research.
+    在这一步中经常使用“this is The first”来表达对研究的肯定。
 
     \begin{eg}{}
       To our knowledge, \uline{this is the first} observational quality improvement initiative in otolaryngology to study the operative flow of a specific procedure and provide insight into areas of patient risk and opportunities for improvement in efficiency.  
     \end{eg}
     
-    In addition, the modal verb ``may'' is found widely used at 4S3, which to some degree might weaken the authority of the author's claims and provide the readers with more room for discussion. This, in turn, would protect the conclusion drawn by the authors from being questioned or negated.
+    此外，情态动词“may”在4S3被广泛使用，这在某种程度上可能会削弱作者主张的权威性，为读者提供更多的讨论空间。反过来，这将保护作者得出的结论不受质疑或否定。
 
     \begin{eg}{}
       These results \uline{may} inform future childhood cancer treatment protocols and SMN surveillance guidelines for CCSs.
@@ -2836,7 +2836,7 @@ From the samples listed above it could be observed that 4S3, in many cases, is a
     \end{eg}
 
     \begin{task}{\heiti 语料库任务}
-      What other modal verbs are used in this step?
+      在这语步中还使用了哪些情态动词？
     \end{task}
 
     \subsubsection{词组}
@@ -2879,14 +2879,14 @@ From the samples listed above it could be observed that 4S3, in many cases, is a
 
     \end{enumerate}
 
-  \subsection{Step 4(4S4) Predicting future studies}
+  \subsection{语阶4(4S4) 预测未来的研究}
     \subsubsection{语阶分析}
 
-    This step predicts the future research direction and points out the problems remaining to be solved. The authors might try to explain to the readers what more could be done or what are the next actions to take.
+    这语阶预测了未来的研究方向，指出了有待解决的问题。作者可能会试图向读者解释还可以做些什么，或者下一步要采取什么行动。
 
     \subsubsection{语言实现}
 
-    Words of deontic modality, which convey a degree of obligation and necessity, such as ``should'' or ``need'', are often used in this step to highlight the authors' wishes that further studies be done in the future.
+    义务情态的动词，用以表达一定程度的义务性和必要性，如“should”或“need”，在这一语阶中经常被使用，以强调作者希望在未来进行进一步的研究。
 
     \begin{eg}{}
       Further research \uline{is needed} to assess the clinical importance of these differences and measure longer-term associations.  
@@ -2911,9 +2911,9 @@ From the samples listed above it could be observed that 4S3, in many cases, is a
 
     \end{enumerate}
 
-\section{Simple Reading}
+\section{材料阅读}
 
-Two samples of M4 are presented here, followed by a detailed analysis on the language features of the steps included.
+这一小节提供了2段M4材料，并对其中语阶的语言特点进行了详细分析。
 
 \begin{sample}[label={myautocounter}]{\heiti}
 
@@ -2986,11 +2986,11 @@ Two samples of M4 are presented here, followed by a detailed analysis on the lan
   
 \end{sample}
 
-\section{Glossary}
+\section{词汇表}
 
 {\small
 \begin{longtblr}[
-    caption = {Glossary of Chapter 6},
+    caption = {第六章词汇表},
     label = {tab:Glossary of Chapter 6},
     % note{a} = {英文论文中指代当前文献中的差距、问题或缺陷。即现有研究尚未解决的部分。},
 ]{
@@ -3002,7 +3002,7 @@ Two samples of M4 are presented here, followed by a detailed analysis on the lan
 }
     
 \toprule
-\textbf{WORDS} & \textbf{MEANING} & \textbf{MEANING OR EXAMPLE}\\
+\textbf{WORDS} & \textbf{MEANING} & \textbf{MEANING or EXAMPLE}\\
 \midrule
 
 {\textbf{bias}\\/\textipa{"baI@s}/} & \emph{n.} 偏倚 & mental tendency or inclination, esp an irrational preference or prejudice \\
@@ -3083,7 +3083,7 @@ Two samples of M4 are presented here, followed by a detailed analysis on the lan
 
 \restoregeometry
 
-\chapter*{Key to Exercises}
+\chapter*{课后练习答案}
 
 \paragraph*{Chapter 1}\par
 \begin{enumerate}
@@ -3340,11 +3340,11 @@ Two samples of M4 are presented here, followed by a detailed analysis on the lan
 
 \appendix
 
-\chapter{Four-word and Longer Lexical Bundles in Moves}
+\chapter{语步中的四词及以上的词组}
 
 {\small
 \begin{longtblr}[
-    caption = {Four-word and Longer Lexical Bundles in Moves},
+    caption = {语步中的四词及以上的词组},
     label = {tab:Four-word and Longer Lexical Bundles in Moves},
     remark{Note 1} = {structures (Str), functions (Fun), noun based bundles (N), preposition based bundles (P), verb based bundles (V), otherbundles (O), research based bundles (R), text based bundles (T), stance based bundles (S)},
     remark{Note 2} = {Lexical bundles that appear more than once are in bold.}
@@ -3564,12 +3564,12 @@ our findings suggest that & 20 & 20 & V & T \\
 \end{longtblr}
 }
 
-\chapter{Four-word and Longer Lexical Bundles in Steps}
+\chapter{语阶中的四词及以上的词组}
 
 \begin{landscape}
   {\tiny
   \begin{longtblr}[
-      caption = {Four-word and Longer Lexical Bundles in Steps},
+      caption = {语阶中的四词及以上的词组},
       label = {tab:Four-word and Longer Lexical Bundles in Steps},
   ]{
       width = \linewidth,
