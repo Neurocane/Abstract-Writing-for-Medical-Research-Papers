@@ -15,6 +15,8 @@
 \usepackage[normalem]{ulem}
 % \usepackage[]{ninecolors}
 % \NineColors{saturation=low}
+% \usepackage[figuresright]{rotating}
+\usepackage[]{lscape}
 \usepackage{tabularray}
 \UseTblrLibrary{booktabs}
 % \usepackage[]{paracol}
@@ -118,7 +120,7 @@ attach title to upper,coltitle=black,arc=0mm,top=0mm,boxrule=0pt,beforeafter ski
 
 原书通本以英文编写，编者似乎意图借此提升我等英语阅读水平，奈何文本中穿插语言学专有名词，初学时疲于翻译、苦不堪言。此外，期末复习期间，全英文本并不利于提升复习效率，故译者对主要文本进行翻译，对照复习。本套重置本将基于该译本进行整理，包含三种排版样式——原文重排版、双语对照版、译文版。
 
-重置版保留了较大的边注区域，便于读者阅读时进行笔记标注，同时译者在此区域添加了部分专有名词的解释。同时，根据排版需要设计了多种类型的盒子对文本区块进行包裹，提升视觉效果的同时，排版的连续性改善了部分区域注意力被引导分散的问题。
+原文重排版和译文版保留了较大的边注区域，便于读者阅读时进行笔记标注，同时译者在此区域添加了部分专有名词的解释。同时，根据排版需要设计了多种类型的盒子对文本区块进行包裹，提升视觉效果的同时，排版的连续性改善了部分区域注意力被引导分散的问题。
 
 本书初稿为个人翻译作品，在此感谢后期参与校对工作的朋友们。若发现纰漏，请在GitHub上提交\verb|issue|~\sout{提交了也不一定马上改，咕咕咕}。在此声明，此套图书仅供学习交流使用，请勿用于商业用途或其他领域。原书内容的著作权归原书作者所有。编辑此书的模板，您可以基于协议进行修改和使用。
 
@@ -3571,6 +3573,275 @@ our findings suggest that & 20 & 20 & V & T \\
 }
 
 \chapter{Four-word and Longer Lexical Bundles in Steps}
+
+\begin{landscape}
+  {\tiny
+  \begin{longtblr}[
+      caption = {Four-word and Longer Lexical Bundles in Steps},
+      label = {tab:Four-word and Longer Lexical Bundles in Steps},
+  ]{
+      width = \linewidth,
+      colspec = {X[2,c,h]  X[8,l,h]  X[8,l,h]  X[6,l,h]},
+      rowhead = 1, rowfoot = 0, % 每个分页里表头表尾的数量
+      % row{odd} = {blue8}, 
+      row{even} = {azure9},
+  }
+      
+  \toprule
+  \textbf{Move/ Step} & \textbf{Communicative functions} & \textbf{Specific bundles} & \textbf{Common bundles}\\
+  \midrule
+  M1 & Creating a research territory/ space &  & \\
+  1S1 & Presenting current knowledge or relevant information established by previos studies & {has been asociated with \\
+      has been shown to \\
+      is one of the} & {for the teatment of \\
+      in patients with advanccd \\
+      in the emergency depatmen \\
+      in the treatment of}\\
+  1S2 & Establishing a niche/problem & {little is known about the \\
+      little is known about} & \\
+  1S3a & Indicating main purposs & {the aim of this study was to evaluate the \\
+      the aim of this study was to invesigate \\
+      the aim of this study was to asscss \\
+      the aim of this study was to \\
+      the pupose of this study was to \\
+      the objecive of this study was to \\
+      of this study was to determine the \\
+      of this study was to invsigate \\
+      of this sudy was to determine \\
+      of this study was to evaluate \\
+      of this sudy was to compare \\
+      of this study was to examine \\
+      aim of the study was to \\
+      of this study was to \\
+      study was to evaluate the \\
+      study was to investigate the \\
+      of the study was to \\
+      the efficacy and safety of \\
+      study was to assess the \\
+      the safety and efficacy of \\
+      study was to determine the \\
+      of this study were to \\
+      we aimed to asses the\\
+      of this study is to\\
+      study was to compare the\\
+      to determine the effect of\\
+      to examine the association between\\
+      the aim of this\\
+      aim of this study\\
+      the purpose of this\\
+      study was to investigate\\
+      study was to evaluate\\
+      this study aimed to\\
+      study was to assess\\
+      we aimed to assess\\
+      of the study was\\
+      the study was to\\
+      study was to compare\\
+      the aim of the\\
+      our objective was to\\
+      our aim was to\\
+      we sought to determine\\
+      aimed to determine the\\
+      aimed to investigate the\\
+      was to determine whether\\
+      aimed to evaluate the\\
+      we aimed to evaluate\\
+      study aimed to determine\\
+      the objective of the\\
+      was to examine the} & {for the treatment of \\
+      in patients with advanced \\
+      in the emergency departnent \\
+      in the treatment of}\\
+  1S3b & Raising hypotheses & tested the hypothesis that & in patients with advanced\\
+  M2 & Describing research process &  & \\
+  2S1 & Reporting on medical ethics review & study was approved by the & \\
+  2S2 & Explaining briefly research design & {a retrospective cohort study of\\
+      a retrospective cohort study\\
+      we conducted a retrospective\\
+      a cross-sectional study\\
+      a secondary analysis of} & \\
+  2S3 & Describing subjects or data and their selection criteria & {were included in the\\
+      were included in this\\
+      years or older with\\
+      data were collected from} & {at the time of\\
+      on the basis of}\\
+  2S4 & Describing experimental procedure, such as interventions, examinations,
+    etc. & {patients were randomly assigned to receive\\
+      were randomly assigned to receive\\
+      patients were randomly assigned to\\
+      were randomly assigned to\\
+      were randomized to receive\\
+      were masked to treatment\\
+      patients were randomized to\\
+      we randomly assigned patients\\
+      masked to treatment allocation\\
+      participants were randomly assigned\\
+      masked to treatment assignment} & {all patients who received at least one dose of \\
+      at the time of \\
+      on the basis of \\
+      at the end of\\
+      at a dose of\\
+      was assessed using the\\
+      was used to assess\\
+      were used to assess\\
+      were used to evaluate}\\
+  2S5 & Describing main outcomes and their measures & {the primary end point was the\\
+      the primary end point was\\
+      the primary outcome was the\\
+      the primary endpoint was the\\
+      the primary outcome measure was\\
+      was the proportion of patients\\
+      the primary outcome was\\
+      the primary endpoint was\\
+      outcome measure was the\\
+      in all patients who\\
+      secondary end points included} & {all patients who received at least one dose of \\
+      at the time of \\
+      on the basis of \\
+      was used to identify\\
+      at the end of \\
+      at a dose of \\
+      was assessed using the\\
+      was used to assess \\
+      were used to assess\\
+      analysis was used to \\
+      analyses were performed to \\
+      were used to determine\\
+      were used to evaluate}\\
+  2S6 & Describing data analysis methods & {logistic regression was used to\\
+      models were used to\\
+      regression analysis was used} & {was used to identify\\
+      analysis was used to\\
+      analyses were performed to}\\
+  2S7 & Reporting on registration information & {this trial is registered with\\
+      this study is registered with} & were used to determine\\
+  M3 & Summarizing results &  & \\
+  3S1 & Explaining information on valid samples & {patients were randomly assigned to\\
+      were randomly assigned to receive\\
+      patients were included in the\\
+      were included in the study\\
+      were included in the\\
+      included in the analysis\\
+      patients were enrolled and} & {at a median follow-up of\\
+      in the placebo group\\
+      in the control group\\
+      a median follow-up of during the study period}\\
+  3S2 & Illustrating overall observation or main results & {there was no significant difference in\\
+      there were no significant differences in\\
+      there were no significant differences between\\
+      there was no difference in\\
+      adverse events were reported in\\
+      there were no differences in\\
+      serious adverse events were reported\\
+      were more likely to have\\
+      did not differ significantly between\\
+      did not differ between the\\
+      was associated with a/an\\
+      were more likely to\\
+      there was no significant\\
+      there were no significant\\
+      were randomly assigned to\\
+      did not differ between\\
+      was not associated with\\
+      at the time of\\
+      was significantly associated with\\
+      was significantly higher in\\
+      area under the curve\\
+      the most common grade\\
+      were less likely to\\
+      events were reported in\\
+      compared with the control\\
+      were not significantly different between the two groups\\
+      was not significantly different\\
+      significantly higher in the\\
+      was found to be\\
+      was significantly lower in\\
+      an increased risk of\\
+      not significantly different between\\
+      was the most common\\
+      were not associated with\\
+      group compared with the\\
+      was associated with increased\\
+      associated with an increased\\
+      no statistically significant difference\\
+      were significantly higher in\\
+      significant difference in the\\
+      no significant difference between\\
+      significant differences between the\\
+      was independently associated with\\
+      were associated with a\\
+      no significant differences were} & \\
+  M4 & Drawing conclusions &  & \\
+  4S1 & Reiterating pivotal results & {was associated with a\\
+      was not associated with} & {is associated with a\\
+      an increased risk of \\
+      associated with an increased}\\
+  4S2 & Indicating limitations &  & \\
+  4S3 & Stating the significance of the results & {the results of this study\\
+      this is the first\\
+      these findings suggest that\\
+      our results suggest that\\
+      these results suggest that\\
+      can be used to\\
+      for the treatment of\\
+      has the potential to\\
+      our findings suggest that} & {is associated with a\\
+      an increased risk of \\
+      associated with an increased}\\
+  4S4 & Predicting future studies & {further research is needed to\\
+      studies are needed to} & \\
+  
+  \bottomrule
+  
+  \end{longtblr}
+
+  % \begin{longtable} to \textwidth {XXXX}
+
+  %   % \toprule
+  %   % Move/ Step & Communicative functions & Specific bundles & Common bundles \\
+  %   % \midrule 
+  %   % \endfirsthead
+
+  %   % Appear the table header at the top of every page
+  %   \toprule
+  %   Move/ Step & Communicative functions & Specific bundles & Common bundles \\
+  %   \midrule 
+  %   \endhead 
+  
+  %   % Appear \hline at the bottom of every page
+  %   \bottomrule
+  %   \endfoot 
+
+
+  %   M1 & Creating a research territory/ space &  &  \\
+  %   1S1 & Presenting current knowledge or relevant information established by previos studies & \begin{tabular}[c]{@{}l@{}}has been asociated with \\ has been shown to \\ is one of the\end{tabular} & \begin{tabular}[c]{@{}l@{}}for the teatment of \\ in patients with advanccd \\ in the emergency depatmen \\ in the treatment of\end{tabular} \\
+  %   1S2 & Establishing a niche/problem & \begin{tabular}[c]{@{}l@{}}little is known about the \\ little is known about\end{tabular} &  \\
+  %   1S3a & Indicating main purposs & \begin{tabular}[c]{@{}l@{}}the aim of this study was to evaluate the \\ the aim of this study was to invesigate \\ the aim of this study was to asscss \\ the aim of this study was to \\ the pupose of this study was to \\ the objecive of this study was to \\ of this study was to determine the \\ of this study was to invsigate \\ of this sudy was to determine \\ of this study was to evaluate \\ of this sudy was to compare \\ of this study was to examine \\ aim of the study was to \\ of this study was to \\ study was to evaluate the \\ study was to investigate the \\ of the study was to \\ the efficacy and safety of \\ study was to assess the \\ the safety and efficacy of \\ study was to determine the \\ of this study were to \\ we aimed to asses the\\ of this study is to\\ study was to compare the\\ to determine the effect of\\ to examine the association between\\ the aim of this\\ aim of this study\\ the purpose of this\\ study was to investigate\\ study was to evaluate\\ this study aimed to\\ study was to assess\\ we aimed to assess\\ of the study was\\ the study was to\\ study was to compare\\ the aim of the\\ our objective was to\\ our aim was to\\ we sought to determine\\ aimed to determine the\\ aimed to investigate the\\ was to determine whether\\ aimed to evaluate the\\ we aimed to evaluate\\ study aimed to determine\\ the objective of the\\ was to examine the\end{tabular} & \begin{tabular}[c]{@{}l@{}}for the treatment of \\ in patients with advanced \\ in the emergency departnent \\ in the treatment of\end{tabular} \\
+  %   1S3b & Raising hypotheses & tested the hypothesis that & in patients with advanced \\
+  %   M2 & Describing research process &  &  \\
+  %   2S1 & Reporting on medical ethics review & study was approved by the &  \\
+  %   2S2 & Explaining briefly research design & \begin{tabular}[c]{@{}l@{}}a retrospective cohort study of\\ a retrospective cohort study\\ we conducted a retrospective\\ a cross-sectional study\\ a secondary analysis of\end{tabular} &  \\
+  %   2S3 & Describing subjects or data and their selection criteria & \begin{tabular}[c]{@{}l@{}}were included in the\\ were included in this\\ years or older with\\ data were collected from\end{tabular} & \begin{tabular}[c]{@{}l@{}}at the time of\\ on the basis of\end{tabular} \\
+  %   2S4 & Describing experimental procedure, such as interventions, examinations, etc. & \begin{tabular}[c]{@{}l@{}}patients were randomly assigned to receive\\ were randomly assigned to receive\\ patients were randomly assigned to\\ were randomly assigned to\\ were randomized to receive\\ were masked to treatment\\ patients were randomized to\\ we randomly assigned patients\\ masked to treatment allocation\\ participants were randomly assigned\\ masked to treatment assignment\end{tabular} & \begin{tabular}[c]{@{}l@{}}all patients who received at least one dose of \\ at the time of \\ on the basis of \\ at the end of\\ at a dose of\\ was assessed using the\\ was used to assess\\ were used to assess\\ were used to evaluate\end{tabular} \\
+  %   2S5 & Describing main outcomes and their measures & \begin{tabular}[c]{@{}l@{}}the primary end point was the\\ the primary end point was\\ the primary outcome was the\\ the primary endpoint was the\\ the primary outcome measure was\\ was the proportion of patients\\ the primary outcome was\\ the primary endpoint was\\ outcome measure was the\\ in all patients who\\ secondary end points included\end{tabular} & \begin{tabular}[c]{@{}l@{}}all patients who received at least one dose of \\ at the time of \\ on the basis of \\ was used to identify\\ at the end of \\ at a dose of \\ was assessed using the\\ was used to assess \\ were used to assess\\ analysis was used to \\ analyses were performed to \\ were used to determine\\ were used to evaluate\end{tabular} \\
+  %   2S6 & Describing data analysis methods & \begin{tabular}[c]{@{}l@{}}logistic regression was used to\\ models were used to\\ regression analysis was used\end{tabular} & \begin{tabular}[c]{@{}l@{}}was used to identify\\ analysis was used to\\ analyses were performed to\end{tabular} \\
+  %   2S7 & Reporting on registration information & \begin{tabular}[c]{@{}l@{}}this trial is registered with\\ this study is registered with\end{tabular} & were used to determine \\
+  %   M3 & Summarizing results &  &  \\
+  %   3S1 & Explaining information on valid samples & \begin{tabular}[c]{@{}l@{}}patients were randomly assigned to\\ were randomly assigned to receive\\ patients were included in the\\ were included in the study\\ were included in the\\ included in the analysis\\ patients were enrolled and\end{tabular} & \begin{tabular}[c]{@{}l@{}}at a median follow-up of\\ in the placebo group\\ in the control group\\ a median follow-up of during the study period\end{tabular} \\
+  %   3S2 & Illustrating overall observation or main results & \begin{tabular}[c]{@{}l@{}}there was no significant difference in\\ \\ there were no significant differences in\\ there were no significant differences between\\ there was no difference in\\ adverse events were reported in\\ there were no differences in\\ serious adverse events were reported\\ were more likely to have\\ did not differ significantly between\\ did not differ between the\\ was associated with a/an\\ were more likely to\\ there was no significant\\ there were no significant\\ were randomly assigned to\\ did not differ between\\ was not associated with\\ at the time of\\ was significantly associated with\\ was significantly higher in\\ area under the curve\\ the most common grade\\ were less likely to\\ events were reported in\\ compared with the control\\ were not significantly different between the two groups\\ was not significantly different\\ significantly higher in the\\ was found to be\\ was significantly lower in\\ an increased risk of\\ not significantly different between\\ was the most common\\ were not associated with\\ group compared with the\\ was associated with increased\\ associated with an increased\\ no statistically significant difference\\ were significantly higher in\\ significant difference in the\\ no significant difference between\\ significant differences between the\\ was independently associated with\\ were associated with a\\ no significant differences were\end{tabular} &  \\
+  %   M4 & Drawing conclusions &  &  \\
+  %   4S1 & Reiterating pivotal results & \begin{tabular}[c]{@{}l@{}}was associated with a\\ was not associated with\end{tabular} & \begin{tabular}[c]{@{}l@{}}is associated with a\\ an increased risk of \\ associated with an increased\end{tabular} \\
+  %   4S2 & Indicating limitations &  &  \\
+  %   4S3 & Stating the significance of the results & \begin{tabular}[c]{@{}l@{}}the results of this study\\ this is the first\\ these findings suggest that\\ our results suggest that\\ these results suggest that\\ can be used to\\ for the treatment of\\ has the potential to\\ our findings suggest that\end{tabular} & \begin{tabular}[c]{@{}l@{}}is associated with a\\ an increased risk of \\ associated with an increased\end{tabular} \\
+  %   4S4 & Predicting future studies & \begin{tabular}[c]{@{}l@{}}further research is needed to\\ studies are needed to\end{tabular} &  \\
+  
+  % \end{longtable}
+  
+  }
+\end{landscape}
+
+
+
 \backmatter
 
 
